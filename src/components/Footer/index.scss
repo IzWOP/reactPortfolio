@@ -17,7 +17,8 @@
     }
     grid-template-rows: auto auto auto auto;
 
-    background-color: rgba(30, 30, 30, 0.97);
+    // background-color: rgba(30, 30, 30, 0.97);
+    background-color: #F5F5F5;
     color: #9A9A9A;
     padding-bottom: 2rem;
     .links {
@@ -29,7 +30,6 @@
             grid-row: 1/2;
             grid-template-columns: repeat(8,minmax(min-content,1fr));
             grid-column: center-start/center-end;
-            margin-bottom: 2rem;
         }
         h6 {
 
@@ -46,14 +46,6 @@
             grid-column: 1/-1;
             @include breakpoint(md) {
                 grid-column: 2/6;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                li {
-                    margin: 0.5rem 0;
-                }
             }
             &-customer {
                 grid-column: 1/-1;
@@ -157,7 +149,7 @@
         }
     }
     .copyright {
-
+text-transform: uppercase;
         grid-row: 5;
         grid-column: 1/-1;
         @include breakpoint(md) {
