@@ -140,8 +140,8 @@ body {
             }
         }
         &_textbox {
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: auto;
+            padding-right: auto;
             @include breakpoint(md) {
                 padding: 0;
             }
@@ -637,6 +637,9 @@ body {
     
 }
 .projects{
+    position: relative;
+    grid-column: 1/-1;
+    grid-template-columns: [full-start] minmax(30px, 30px) [center-start] repeat(8, minmax(min-content, 1fr)) [center-end] minmax(30px, 30px) [full-end];
     padding: 4rem 0 4rem 0;
     background-color: #000;
     color: #fff;
@@ -645,6 +648,9 @@ body {
     }
 }
 .stats{
+    position: relative;
+    grid-column: 1/-1;
+    grid-template-columns: [full-start] minmax(30px, 30px) [center-start] repeat(8, minmax(min-content, 1fr)) [center-end] minmax(30px, 30px) [full-end];
         //finish image background blur
         padding: 0 15px;
         margin-top: 4rem;
@@ -755,6 +761,17 @@ body {
                 }
             }
         }
+}
+.personal-modal{
+    width: 100%;
+    position: relative;
+    grid-column: 1/-1;
+    grid-template-columns: [full-start] minmax(30px, 30px) [center-start] repeat(8, minmax(min-content, 1fr)) [center-end] minmax(30px, 30px) [full-end];
+}
+.contact{
+    position: relative;
+    grid-column: 1/-1;
+    grid-template-columns: [full-start] minmax(30px, 30px) [center-start] repeat(8, minmax(min-content, 1fr)) [center-end] minmax(30px, 30px) [full-end];
 }
 @keyframes rotating {
     from {

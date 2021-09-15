@@ -2,41 +2,13 @@ import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faShippingFast, faMoneyBillWave} from '@fortawesome/free-solid-svg-icons';
-import Modal from 'react-bootstrap/Modal'
 
-import Navbar from '../Navbar';
-import Footer from '../Footer'
 
 import './index.scss';
 
 const Home = () => {
-    function PersonalModal() {
-        const [fullscreen,
-            setFullscreen] = useState(true);
-        const [show,
-            setShow] = useState(false);
 
-        function handleShow(breakpoint) {
-            setFullscreen(breakpoint);
-            setShow(true);
-        }
-
-        return <div>
-            <button className="me-2" onClick={() => handleShow(true)}>
-                Full screen
-            </button>
-            <Modal show={show} fullscreen={fullscreen} onHide= {() => setShow(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Modal</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    Modal body content
-                </Modal.Body>
-            </Modal>
-        </div>;
-    }
-    return <div>
-        <Navbar/>
+    return <>
         <div className="home">
             <section className='billboard'>
                 <div className='background'></div>
@@ -189,108 +161,7 @@ const Home = () => {
                     </div>
                 </section>
             </div >
-            <section className='fill this in with blog or something'></section>
-            <section className="projects">
-                <h2>the work</h2 >
-                <div className="cont">
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="project">
-                            <img src="assets/img/rubik_background2.jpg" alt=""/>
-                            <Link
-                                className="over-area color-1"
-                                href="javascript:void(0)"
-                                onClick="rubik.showModal(this)"
-                                data-target="project_1">
-                                <div className="content">
-                                    <h4>Sol 25</h4>
-                                    <p>Click for more...
-                                    </p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="project">
-                            <img src="assets/img/rubik_background2.jpg" alt=""/>
-                            <Link
-                                className="over-area color-1"
-                                href="javascript:void(0)"
-                                onClick="rubik.showModal(this)"
-                                data-target="project_2">
-                                <div className="content">
-                                    <h4>Villa Positano</h4>
-                                    <p>Click for more...
-                                    </p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="project">
-                            <img src="assets/img/rubik_background2.jpg" alt=""/>
-                            <Link
-                                className="over-area color-1"
-                                href="javascript:void(0)"
-                                onClick="rubik.showModal(this)"
-                                data-target="project_3">
-                                <div className="content">
-                                    <h4>House 2413</h4>
-                                    <p>Click for more...
-                                    </p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="project">
-                            <img src="assets/img/rubik_background2.jpg" alt=""/>
-                            <Link
-                                className="over-area color-1"
-                                href="javascript:void(0)"
-                                onClick="rubik.showModal(this)"
-                                data-target="project_4">
-                                <div className="content">
-                                    <h4>Elwood House</h4>
-                                    <p>Click for more...
-                                    </p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="project">
-                            <img src="assets/img/rubik_background2.jpg" alt=""/>
-                            <Link
-                                className="over-area color-1"
-                                href="javascript:void(0)"
-                                onClick="rubik.showModal(this)"
-                                data-target="project_5">
-                                <div className="content">
-                                    <h4>Brandywine House</h4>
-                                    <p>Click for more...
-                                    </p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="project">
-                            <img src="assets/img/rubik_background2.jpg" alt=""/>
-                            <Link
-                                className="over-area color-1"
-                                href="javascript:void(0)"
-                                onClick="rubik.showModal(this)"
-                                data-target="project_6">
-                                <div className="content">
-                                    <h4>ICRAVE Office</h4>
-                                    <p>Click for more...
-                                    </p>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section >
+
             <section className="stats">
                 <h2>stats section</h2 >
                 <div className="container">
@@ -339,65 +210,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            < PersonalModal/>
-            <div class="section section-contact-2" id="contact">
-                <div class="container">
-                    <div class="text-area">
-                        <div class="title add-animation">
-                            <h2>Get in Touch</h2>
-                            <div class="separator-container">
-                                <div class="separator line-separator">⌘</div>
-                            </div>
-                            <p>Would you want to talk about something? Just send me your message and I will
-                                happily chat</p>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Your Full Name</label>
-                                    <input type="text" value="" placeholder="Michael Jordan" class="form-control"/>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group add-animation animation-2">
-                                    <label>Your Email</label>
-                                    <input
-                                        type="text"
-                                        value=""
-                                        placeholder="michael.j@gmail.com"
-                                        class="form-control"/>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group add-animation animation-3">
-                                    <label>Subject</label>
-                                    <input type="text" value="" placeholder="Say hi to you" class="form-control"/>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group add-animation animation-1">
-                                    <textarea
-                                        class="form-control"
-                                        placeholder="Here you can write your nice text"
-                                        rows="8"></textarea>
-                                </div>
-                                <div>
-                                    <div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5">
-                                        <button class="btn btn-lg btn-black btn-contact">
-                                            SEND
-                                            <i class="fa fa-paper-plane"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Footer/>
+
         </div>
-    </div>
+    </>
 }
 export default Home;
