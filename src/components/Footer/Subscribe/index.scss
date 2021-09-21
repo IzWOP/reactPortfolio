@@ -3,11 +3,11 @@ $green: #1ECD97;
 @import '../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import "../../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import '../../../stylesheets/mixins.scss';
-.subscribe {
+.send_email {
+    padding: 0 15px;
     background-color: #fff;
     background-position: 50% 25%;
     background-size: cover;
-    height: 300px;
     color: #000;
     display: grid;
     position: relative;
@@ -23,27 +23,72 @@ $green: #1ECD97;
     .container {
         z-index: 1;
         display: inherit;
-        grid-column: center-start/center-end;
+        grid-column: 1/-1;
+        @include breakpoint(sm){
+            align-self: center;
+        }
         @include breakpoint(lg){
-            grid-column: 4/10;
-
+            grid-column: center-start/center-end;
         }
         // justify-content: space-between;
         h5 {
+            padding-top: 4rem;
             font-size: 1.5rem;
             line-height: 1.5em;
             font-weight: normal;
             // margin-right: 5rem;
             grid-column: 1/-1;
             text-align: center;
-            margin: auto 0 1rem 0;
+            margin: 0;
             @include breakpoint(md) {
                 margin: auto 0;
                 text-align: left;
                 font-size: 1.7rem;
-                grid-column: 1/4;
+                grid-column: 1/-1;
+                text-align: center;
             }
 
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            margin-bottom: 1rem;
+            @include breakpoint(sm){
+                grid-column: 1/-1;
+                margin-bottom: 2rem;
+            }
+        }
+        .separator-container{
+            grid-column: 1/-1;
+            text-align: center;
+            color: #c5a47e;
+            margin: 0 auto;
+            width: 11em;
+            .separator.line-separator{
+                width: 100%;
+                color: #000;
+                margin: .5rem auto;
+                position: relative;
+                @include breakpoint(md) {
+                    margin: 1rem auto;
+                }
+                &::before{
+                    float: left;
+                    display: block;
+                    width: 40%;
+                    content: " ";
+                    margin-top: 7px;
+                    border: 1px solid #c5a47e;
+                }
+                &::after{
+                    float: right;
+                    display: block;
+                    width: 40%;
+                    content: " ";
+                    margin-top: 7px;
+                    border: 1px solid #c5a47e;
+                }
+            }
         }
     }
     form {
@@ -55,47 +100,85 @@ $green: #1ECD97;
         margin: 0 0 2rem 0;
         opacity: 1;
         transition: opacity 0.3s linear;
-        @include breakpoint(md) {
+        @include breakpoint(sm) {
             // justify-items: end;
-            max-width: 500px;
             justify-self: end;
-            grid-column: 4/8;
+            grid-column: 1/-1;
             margin: 0;
-
-            display: flex;
-            flex-direction: row;
-        }
-        .form-item {
-            padding: 10px 18px 10px 5px;
-            max-width: 250px;
             width: 100%;
-            font-size: 1rem;
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid #fff;
-            text-indent: 1rem;
-            color: #fff;
-            margin-bottom: 2rem;
-            @include breakpoint(md){
-                margin-bottom: .5rem;
-
+            display: flex;
+            flex-direction: column;
+        }
+        @include breakpoint(md) {
+            margin-bottom: 4rem;
+        }
+        .form{
+            &-top{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-between;
+                @include breakpoint(md){
+                    margin-bottom: 2rem;
+                    flex-direction: row;
+                }
+                .form-item{
+                    width: 100%;
+                    min-height: 2rem;
+                    @include breakpoint(md){
+                        width: 30%;
+                        min-height: 2.5rem;
+                    }
+                }
             }
-            &:focus {
-                outline: none;
-                background-color: #fff;
+            &-bottom{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .form-item{
+                    min-height: 5rem;
+                    @include breakpoint(md){
+                        min-height: 10rem;
+                        margin-bottom: 2rem;
+                    }
+                }
             }
-            &:focus-visible {
-                outline: none;
+            &-item {
+                padding:0;
+                width: 100%;
+                font-size: 1rem;
                 background-color: transparent;
+                border: 1px solid #d0cdbc;
+                text-indent: 1rem;
+                color: #444444;
+                margin-bottom: 1.5rem;
+                font-family: 'Verlag-Book',"Helvetica Neue",Helvetica,Arial,sans-serif;
+                @include breakpoint(md){
+                    margin-bottom: .5rem;
+                }
+                &:focus {
+                    outline: none;
+                    background-color: #fff;
+                }
+                &:focus-visible {
+                    outline: none;
+                    background-color: transparent;
+                }
+                &:-internal-autofill-selected {
+                    background-color: transparent !important;
+                }
+                &::placeholder {
+                    color: #ededed;
+                    margin-left: 0;
+                    padding-left: 0;
+                }
             }
-            &:-internal-autofill-selected {
-                background-color: transparent !important;
-            }
-            &::placeholder {
-                color: #ededed;
-                margin-left: 0;
-                padding-left: 0;
-            }
+        }
+       
+        textarea{
+            margin: 0;
+            width: 100%;
+            height: auto;
         }
         input:-webkit-autofill,
         input:-webkit-autofill:active,
@@ -115,7 +198,6 @@ $green: #1ECD97;
         }
         .submit {
             max-width: 400px;
-            border-radius: 20px;
         }
         .active {
             display: block;
@@ -126,18 +208,18 @@ $green: #1ECD97;
 
     }
     .submit {
-        outline: none;
-        height: 40px;
-        text-align: center;
-        width: 130px;
-        border-radius: 40px;
-        background: transparent;
-        border: 2px solid #fff;
-        color: #fff;
-        letter-spacing: 1px;
-        text-shadow: 0;
-        @include breakpoint(md){
-            margin-left: 2rem;
+        text-align: centers;
+        background-color: #434547;
+        border-color: #434547;
+        color: white;
+        opacity: 1;
+        line-height: 1em;
+        position: relative;
+        padding: 16px 44px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        margin: 0 auto 15px;
+        @include breakpoint(sm){
         }
         font: {
             size: 12px;
@@ -148,6 +230,12 @@ $green: #1ECD97;
         &:hover {
             color: white;
             background: #000;
+        }
+        &:focus{
+            background-color: #343434;
+            border-color: #343434;
+            color: white;
+            padding: 16px 54px 16px 34px;
         }
         &:active {
             //letter-spacing: 2px;

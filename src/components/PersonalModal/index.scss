@@ -1,0 +1,88 @@
+@import '../../stylesheets/mixins.scss';
+
+.personal-modal{
+    width: 100%;
+    position: relative;
+    grid-column: 1/-1;
+    grid-template-columns: [full-start] minmax(30px, 30px) [center-start] repeat(8, minmax(min-content, 1fr)) [center-end] minmax(30px, 30px) [full-end];
+}
+.personal-modal{
+    display: grid;
+    .container {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+
+        .top-projects{
+            grid-row: 1;
+            display: flex;
+            flex-wrap: no-wrap;
+            flex-direction: column;
+            @include breakpoint(smd){
+                flex-direction: row;
+            }
+        }
+        .bottom-projects{
+            grid-row: 2;
+            display: flex;
+            flex-wrap: no-wrap;
+            flex-direction: row;
+        }
+        .project{
+            width: 100%;
+            position: relative;
+            grid-row: 2;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-image: linear-gradient(to left, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+                z-index: 0;
+            }
+            img{
+                width: 100%;
+            }
+            .background {
+                -webkit-backdrop-filter:saturate(180%) blur(3px);
+                backdrop-filter: saturate(180%) blur(3px);
+                position: absolute;
+                width: 100vw;
+                height: 100%;
+            }
+        }
+    }
+}
+.modal-backdrop.show{
+    opacity: .8;
+}
+.fade.modal.show{
+    .modal-content{
+        background-color: transparent;
+
+        color: #fff;
+        .project-details{
+            width: 100%;
+        }
+    }
+    .modal-body{
+        .container{
+            h5{
+                color: #fff;
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                margin-top: 0;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                @include breakpoint(smd){
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

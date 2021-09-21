@@ -1,7 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faShippingFast, faMoneyBillWave} from '@fortawesome/free-solid-svg-icons';
 
 
 import './index.scss';
@@ -114,103 +112,43 @@ const Home = () => {
                 <section className="val-props">
                     <div className="container">
                         <div className="text-box">
-                            <h3>People ya Boy created pages with</h3>
-                            <h6>Yeah it's pretty great</h6>
+                            <h3>Collaborating Companies</h3>
                             <p>
-                                We understand our customer base aren 't made of millionaires yet(we aren' t
-                                either).We have dedicated our resources to assure that the customer gets the
-                                best quality for the lowest price.
+                                Some companies I have collaborated with while working for Infinite Peripherals or other projects.
                             </p>
                         </div>
                         <div className="val-prop-cont">
                             <div className="val-prop">
                                 <div className="val-prop-icon">
                                     <img
-                                        src="https://res.cloudinary.com/izzyhv / image / upload / v1624746430 / ecommerce / ACND / hecho - en - mexico - 2 _c0vlrc.svg "
+                                        src="https://res.cloudinary.com/izzyhv/image/upload/v1632174385/portfolio/apple-logo_bdlu8x.svg"
                                         alt=" "/>
                                 </div>
-                                <h4>Made in Mexico</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                    dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                    nostrum corrupti!</p>
                             </div>
                             <div className="val-prop">
                                 <div className="val-prop-icon">
-                                    <FontAwesomeIcon icon={faMoneyBillWave}/>
+                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/samsung_pnyxql.png" alt="" />
                                 </div>
-                                <h4>
-                                    Bang for your buck
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                    dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                    nostrum corrupti!
-                                </p>
                             </div>
                             <div className="val-prop">
                                 <div className="val-prop-icon">
-                                    <FontAwesomeIcon icon={faShippingFast}/>
+                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174385/portfolio/ivanti-wavelink-velocity_uaacrw.jpg" alt="" />
                                 </div>
-                                <h4>
-                                    Shipping is rapido
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                    dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                    nostrum corrupti!</p>
+                            </div>
+                            <div className="val-prop">
+                                <div className="val-prop-icon">
+                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/Universe_Logo_white_n9rw1p.png" alt="" />
+                                </div>
+                            </div>
+                            <div className="val-prop">
+                                <div className="val-prop-icon">
+                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/infinite-peripherals-logo_fhzyuj.svg" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div >
-
-            <section className="stats">
-                <h2>stats section</h2 >
-                <div className="container">
-                    <div className="text-box">
-                        <h3>Numbers</h3>
-                        <div className="separator-container">
-                            <div className="separator line-separator">⌘</div>
-                        </div>
-                        <h6>Happy People</h6>
-                    </div>
-                    <div className="val-prop-cont">
-                        <div className="val-prop">
-                            <div className="val-prop-icon">
-                                <img
-                                    src="https://res.cloudinary.com/izzyhv / image / upload / v1624746430 / ecommerce / ACND / hecho - en - mexico - 2 _c0vlrc.svg "
-                                    alt=" "/>
-                            </div>
-                            <h4>Made in Mexico</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                nostrum corrupti!</p>
-                        </div>
-                        <div className="val-prop">
-                            <div className="val-prop-icon">
-                                <FontAwesomeIcon icon={faMoneyBillWave}/>
-                            </div>
-                            <h4>
-                                Bang for your buck
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                nostrum corrupti!
-                            </p>
-                        </div>
-                        <div className="val-prop">
-                            <div className="val-prop-icon">
-                                <FontAwesomeIcon icon={faShippingFast}/>
-                            </div>
-                            <h4>
-                                Shipping is rapido
-                            </h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                nostrum corrupti!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </div>
     </>
 }

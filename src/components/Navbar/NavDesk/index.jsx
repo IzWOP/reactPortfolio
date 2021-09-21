@@ -94,7 +94,7 @@ const NavDesk = () => {
     return <> 
     <nav className='navbar'>
         <Link to='/' className='navbar-logo'>
-            Izzy V.
+            Isaac V.
         </Link>
         
         <div className='nav-links' ref={ref}>
