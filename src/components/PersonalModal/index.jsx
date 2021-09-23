@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
 
 //stylesheet
+
 import './index.scss';
 
 const PersonalModal = () => {
