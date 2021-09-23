@@ -112,38 +112,36 @@ const Home = () => {
                 <section className="val-props">
                     <div className="container">
                         <div className="text-box">
+                        <h6>My history</h6>
+                            <div class="separator-container">
+                            <div class="separator line-separator">
+                                ⌘
+                            </div>
+                        </div>
                             <h3>Collaborating Companies</h3>
-                            <p>
-                                Some companies I have collaborated with while working for Infinite Peripherals or other projects.
-                            </p>
                         </div>
                         <div className="val-prop-cont">
                             <div className="val-prop">
-                                <div className="val-prop-icon">
+               
                                     <img
                                         src="https://res.cloudinary.com/izzyhv/image/upload/v1632174385/portfolio/apple-logo_bdlu8x.svg"
                                         alt=" "/>
-                                </div>
+ 
                             </div>
                             <div className="val-prop">
-                                <div className="val-prop-icon">
+                               
                                     <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/samsung_pnyxql.png" alt="" />
-                                </div>
+                            
                             </div>
                             <div className="val-prop">
-                                <div className="val-prop-icon">
+                               
                                     <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174385/portfolio/ivanti-wavelink-velocity_uaacrw.jpg" alt="" />
-                                </div>
+                            
                             </div>
                             <div className="val-prop">
-                                <div className="val-prop-icon">
-                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/Universe_Logo_white_n9rw1p.png" alt="" />
-                                </div>
-                            </div>
-                            <div className="val-prop">
-                                <div className="val-prop-icon">
+                               
                                     <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/infinite-peripherals-logo_fhzyuj.svg" alt="" />
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

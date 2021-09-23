@@ -125,8 +125,12 @@ body {
             font-family: "Verlag-Book","Helvetica Neue",Helvetica,Arial,sans-serif;
             text-transform: uppercase;
             font-weight: 400;
+            padding-left: 8px;
+            padding-right: 8px;
             @media only screen and (min-width: 475px) {
                 font-size: 1rem;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
         &_textbox {
@@ -452,6 +456,11 @@ body {
             padding: 0;
             grid-template-columns: 1fr [center-start] repeat(8, minmax(min-content, 150px)) [center-end] 1fr;
         }
+        @include breakpoint(md) {
+            display: grid;
+            padding: 0;
+            grid-template-columns: 1fr [center-start] repeat(8, minmax(min-content, 150px)) [center-end] 1fr;
+        }
         @include breakpoint(lg) {
             grid-template-columns: 1fr [center-start] repeat(8, minmax(min-content, 180px)) [center-end] 1fr;
         }
@@ -460,13 +469,27 @@ body {
             @include breakpoint(md) {
                 grid-column: 3/9;
                 display: inherit;
+                margin-bottom: 4rem;
+            }
+            .text-box{
+                @include breakpoint(md){
+                    text-align: center;
+                }
+                h6 {
+
+                    margin-bottom: 0;
+                    text-align: center;
+                    color: #777777;
+                    font-size: 1.2rem;
+                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-weight: 300;
+                }
             }
         }
         .val-prop-cont {
             @include breakpoint(sm) {
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
                 justify-content: space-between;
             }
             @include breakpoint(md) {
@@ -477,49 +500,43 @@ body {
         }
         .val-prop {
 
-            margin: auto auto 4rem;
+            margin: auto;
+            padding: 1rem;
+            margin-bottom: 4rem;
             @include breakpoint(sm) {
-                max-width: 300px;
+                // max-width: 300px;
+                width: 100%;
+                margin-bottom: auto;
             }
             @include breakpoint(smd) {
                 max-width: 230px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
             }
             @include breakpoint(lg) {
                 max-width: 250px;
             }
-            h4 {
-                text-align: center;
-                font-size: 1.25rem;
-                font-weight: 400;
-            }
-            p {
-                text-align: center;
-                color: #999;
-            }
-            .val-prop-icon {
-                position: relative;
-                padding: 0;
-                z-index: 1;
-                display: flex;
-                justify-content: center;
-                img {
-                    width: 60px;
-                    max-width: 100px;
-                    height: auto;
-                    pointer-events: none;
-                    @include breakpoint(smd) {
-                        width: 80px;
-                    }
+
+            img {
+                width: 100%;
+                pointer-events: none;
+                height: max-content;
+                margin: auto;
+                pointer-events: none;
+                @include breakpoint(smd) {
+                    // width: 80px;
                 }
-                svg {
-                    pointer-events: none;
-                    width: 60px;
-                    max-width: 100px;
-                    height: auto;
-                    margin-bottom: 0.5rem;
-                    @include breakpoint(smd) {
-                        width: 80px;
-                    }
+            }
+            svg {
+                pointer-events: none;
+                width: 100%;
+                pointer-events: none;
+                height: max-content;
+                margin: auto;
+                margin-bottom: 0.5rem;
+                @include breakpoint(smd) {
+                    width: 80px;
                 }
             }
         }
