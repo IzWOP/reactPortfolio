@@ -12,7 +12,7 @@
     border-radius: 0 0 5px 5px;
     a{
         text-decoration: none;
-        color: #000;
+        color: #fff;
     }
     @include breakpoint(md) {
         grid-template-columns: [full-start]minmax(1.875rem, 1.875rem) [center-start] repeat(8, minmax(min-content, 1fr)) [center-end] minmax(1.875rem, 1.875rem)[full-end];

@@ -70,7 +70,6 @@ const NavMobile = () => {
             if(ref.current && !ref.current.contains(e.target)){
                 setClick(false)
                 setActive(null)
-                console.log('clicked outside');
             } 
         }
         //opens or closes mobile nav container
@@ -98,7 +97,7 @@ const NavMobile = () => {
     <nav className='navbar-mobile'>
         <div className='mobile-header'>
             <Link to='/' className='navbar-logo'>
-                ACND
+                Isaac V.
             </Link>
             <FontAwesomeIcon onClick={handleClick} className='navbar-burger' icon={faBars}/>
         </div>
@@ -109,38 +108,19 @@ const NavMobile = () => {
             </div>
             <div className='mobile-nav-links' ref={ref}>
                 <div>
-                    <button className='products' onClick={handleClick}>Products</button>
-                    <ul>
-                        <Link to='/products'>
-                            <li>All Products</li>
-                        </Link>
-                        <li>Men</li>
-                        <li>Women</li>
-                        <li>Accessories</li>
-                    </ul>
+                    <button className='products' onClick={handleClick}>About</button>
                 </div>
                 <div className='active'>
-                    <button className='company' onClick={handleClick}>Company</button>
-                    <ul >
-                        <li>About Us</li>
-                        <li>Contact us</li>
-                        <li>Returns</li>
-                    </ul>
+                    <button className='company' onClick={handleClick}>Reviews</button>
                 </div>
                 <div>
-                    <button className='user' onClick={handleClick}><FontAwesomeIcon icon={faUserCircle}/></button>
-                    <ul>
-                        <li>Account Information</li>
-                        <li>Orders</li>
-                        <li>Sign in</li>
-                        <li>Sign out</li>
-                    </ul>
+                    <button className='user' onClick={handleClick}>Testimonials</button>
                 </div>
                 <div>
-                    <button className='cart mobile-icons'><FontAwesomeIcon icon={faShoppingCart}/></button>
+                    <button className='cart mobile-icons'>Numbers</button>
                 </div>
                 <div>
-                    <button className='mobile-icons'><FontAwesomeIcon icon={faSearch}/></button>
+                    <button className='mobile-icons'>Contact</button>
                 </div>
             </div>
         </div>

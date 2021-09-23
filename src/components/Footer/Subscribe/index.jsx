@@ -3,7 +3,8 @@ import React, {useState, useEffect} from 'react';
 import {useForm} from "react-hook-form";
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-// import '../../utils/api-config'; stylesheets
+// email-js import{ init } from 'emailjs-com'; import '../../utils/api-config';
+// stylesheets
 import './index.scss';
 
 const emailSchema = yup
@@ -12,15 +13,22 @@ const emailSchema = yup
         email: yup
             .string()
             .email()
-            .required('Email is required')
+            .required('Email is required'),
+        fullName: yup
+            .string()
+            .required(),
+        subject: yup.string(),
+        textArea: yup
+            .string()
+            .required()
     });
-
+//teamplate ID: template_tfuqnxf
 const Subscribe = () => {
-
-    //setting up email state/result for button ui and error results
+    // init("user_Qp9GHgtVL7D2S3V30dYlK"); setting up email state/result for button
+    // ui and error results
     const [subscribeStatus,
         setStatus] = useState({email_status: null})
-    const [subscribeResult,
+    const [emailResult,
         setResult] = useState({email_result: null})
     const {register, handleSubmit, formState: {
             errors
@@ -75,55 +83,27 @@ const Subscribe = () => {
     }
 
     //send to internal API to hit mailchimp
-    function sendData(email) {
-        // //setting up API sending
-        // const apiName = 'newsletterAPI';
-        // const path = '/subscribe';
-        // const myInit = {
-        //     body: {
-        //         email_address: email
-        //     }
-        // };
-        // //loading on button
-        // button
-        //     .classList
-        //     .add('clicked');
-        // return API
-        //     .post(apiName, path, myInit)
-        //     .then(res => {
-        //         if (res.errResult) {
-        //             //catch error first and set err UI
-        //             errorReport()
-        //             let errResponse = JSON.parse(res.errResult.text)
-        //             setResult({email_result: errResponse.title})
-        //         } else if (res.result.status === 'pending') {
-        //             //if successful we validate
-        //             validate()
-        //             setResult({email_result: res.result.status})
-        //         } else {
-        //             //just in case we clear and start over
-        //             setResult({email_result: null});
-        //             callback();
-        //             return;
-        //         }
-        //     })
-        //     .catch((err) => {
-        //         //only for huge main website error catching/api
-        //         console.log(err);
-        //         setResult({email_result: 'error'})
-        //         callback()
-        //     });
+    const onSubmitEmail = (formData) => {
+        // //setting up API sending const apiName = 'sending_email_function'; const path
+        // = '/send_email'; const myInit = {     body: {         email_address:
+        // formData.email,         full_name: formData.fullName,          subject:
+        // formData.subject,          message:formData.description     } }; //loading on
+        // button button     .classList     .add('clicked'); return API .post(apiName,
+        // path, myInit)     .then(res => {         if (res.errResult) {
+        // //catch error first and set err UI             errorReport()       let
+        // errResponse = JSON.parse(res.errResult.text) setResult({email_result:
+        // errResponse.title})         } else if (res.result.status === 'pending') {
+        //         //if successful we validate           validate()
+        // setResult({email_result: res.result.status})         } else {
+        // //just in case we clear and start over   setResult({email_result: null});
+        //         callback(); return;         }     })     .catch((err) => {
+        // //only for huge main website error catching/api         console.log(err);
+        // setResult({email_result: 'error'})         callback()     });
     }
 
-    const onSubmitEmail = (formData) => {
-        //  cleaning setting up data
-        const email = formData.email;
-        //send said parameter into function clean
-        sendData(email)
-    }
     //setting the status to notify the user if email subscription succeeded
     useEffect(() => {
-        switch (subscribeResult.email_result) {
+        switch (emailResult.email_result) {
             case 'Member Exists':
                 setStatus({email_status: "Sorry Bro, that email already exists."});
                 setTimeout(function () {
@@ -150,28 +130,51 @@ const Subscribe = () => {
                 setStatus({email_status: null});
                 break;
         }
-    }, [subscribeResult]);
+    }, [emailResult]);
 
     return (
-        <section className='subscribe'>
+        <section className='send_email'>
             <div className='background'></div>
             <div className="container">
-
-                <h5 data-aos="fade-up"
+                <h5
+                    data-aos="fade-up"
                     data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">
-                    Subscribe to get news,<br/> discounts and cool shit!
+                    Get in Touch
                 </h5>
+                <div className="separator-container">
+                    <div className="separator line-separator">⌘</div>
+                </div>
+                <p>Would you want to talk about something?
+                    <br/>Just send me your message and I will happily chat</p>
                 <form
                     onSubmit={handleSubmit(onSubmitEmail)}
                     data-aos="fade-up"
                     data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">
-                    <input
-                        className='form-item'
-                        name="email"
-                        placeholder="Email"
-                        {...register("email",{pattern:"[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"})}/> {errors.email && <p>{errors.email.message}</p>}
+                    <div className="form-top">
+
+                        <input
+                            className='form-item'
+                            placeholder="Full name"
+                            {...register("fullName", { required: true, maxLength: 20 })}/>
+                        <input
+                            className='form-item'
+                            name="email"
+                            placeholder="Email"
+                            {...register("email",{pattern:"[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"})}/> {errors.email && <p>{errors.email.message}</p>}
+                        <input
+                            className='form-item'
+                            placeholder="Subject"
+                            {...register("subject", { pattern: /^[A-Za-z]+$/i })}/>
+                    </div>
+                    <div className="form-bottom">
+                        <textarea
+                            className='form-item'
+                            placeholder="Message"
+                            name="message"
+                            {...register("message")}/>
+                    </div>
                     <button className='submit' type="submit" value="Submitt"></button>
                 </form>
                 {subscribeStatus.email_status !== null && <div className='email-status'>
