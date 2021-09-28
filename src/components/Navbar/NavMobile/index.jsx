@@ -2,8 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import {Link} from 'react-router-dom';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faShoppingCart, faSearch, faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
-import {faUserCircle} from '@fortawesome/free-regular-svg-icons';
+import { faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
 
 //stylesheets
 import './index.scss';

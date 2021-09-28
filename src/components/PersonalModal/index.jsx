@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import { ModalDialog } from "react-bootstrap";
 import Modal from 'react-bootstrap/Modal';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
@@ -147,8 +146,8 @@ const PersonalModal = () => {
     return <section className="personal-modal">
         <div className="text-box">
         <h5>Look at my</h5>
-                    <div class="separator-container">
-                        <div class="separator line-separator">⌘</div>
+                    <div className="separator-container">
+                        <div className="separator line-separator">⌘</div>
                     </div>
         <h3> projects</h3>
         </div>
@@ -196,8 +195,8 @@ const PersonalModal = () => {
                 <Modal.Body>
                 <div className="container">
                     <h4>{selectedProject.project.title}</h4>
-                    <div class="separator-container">
-                        <div class="separator line-separator">⌘</div>
+                    <div className="separator-container">
+                        <div className="separator line-separator">⌘</div>
                     </div>
                     <div className="project-area">
                         <div className="text-box">

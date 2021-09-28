@@ -65,8 +65,8 @@ const Home = () => {
                 <section className="latest">
                     <div className="container">
                         <h6>let me define</h6>
-                        <div class="separator-container">
-                            <div class="separator line-separator">
+                        <div className="separator-container">
+                            <div className="separator line-separator">
                                 ⌘
                             </div>
                         </div>
@@ -113,8 +113,8 @@ const Home = () => {
                     <div className="container">
                         <div className="text-box">
                         <h6>My history</h6>
-                            <div class="separator-container">
-                            <div class="separator line-separator">
+                            <div className="separator-container">
+                            <div className="separator line-separator">
                                 ⌘
                             </div>
                         </div>

@@ -13,7 +13,6 @@
     "aos": "^2.3.4",
     "bootstrap": "5.1.0",
     "cra-template": "1.1.2",
-    "emailjs-com": "^3.2.0",
     "jquery": "^3.6.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
@@ -51,5 +50,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "aws-amplify": "^4.3.0",
+    "aws-amplify-react": "^5.1.1",
+    "emailjs-com": "^3.2.0"
   }
 }
