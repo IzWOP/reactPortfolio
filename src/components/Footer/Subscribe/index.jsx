@@ -14,7 +14,7 @@ const emailSchema = yup
             .string()
             .email()
             .required('Email is required'),
-        fullName: yup
+        full_name: yup
             .string()
             .required(),
         subject: yup.string(),
@@ -79,38 +79,36 @@ const Subscribe = () => {
     // }
 
     //send to internal API to hit mailchimp
-    const onSubmitEmail = (body) => {
+    const onSubmitEmail = async (body) => {
         console.log(body)
         const apiName = 'emailjs';
         const path ='/email';
         const myInit = { 
            body
         }
-        // return API.post(apiName, path, myInit)
-        //     .then(response => {
-        //         // Add your code here
-        //         console.log(response)
-        //         // if (response.errResult){
-        //         //     errorReport()
-        //         //     let errResponse = JSON.parse(res.errResult.text)
-        //         //     setResult({email_result: errResponse.title})
-        //         // }
-        //     })
-        //     .catch(error => {
-        //         console.log(error.response)
-        //     })
-            return API.get(apiName, path, myInit)
-                .then(response => {
-                    // Add your code here
-                    console.log('reponse')
-                    console.log(response);
-                })
-                .catch(error => {
-                    console.log('error')
-                    console.log(error.response)
-                })
-    }
+        return await API.post(apiName, path, myInit)
+            .then(response => {
+                // Add your code here
+                console.log(response)
+                // if (response.errResult){
+                //     errorReport()
+                //     let errResponse = JSON.parse(res.errResult.text)
+                //     setResult({email_result: errResponse.title})
+                // }
+            })
+            .catch(error => {
+                console.log(error.response)
+            })
+            // return API.get(apiName, path, myInit)
+            //     .then(response => {
+            //         // Add your code herec
+            //         console.log(response);
+            //     })
+            //     .catch(error => {
+            //         console.log(error.response)
+            //     })
 
+        }
     //setting the status to notify the user if email subscription succeeded
     // useEffect(() => {
     //     switch (emailResult.email_result) {
@@ -153,7 +151,8 @@ const Subscribe = () => {
                             <input
                                 className='form-item'
                                 placeholder="Full name"
-                                {...register("fullName", { required: true, maxLength: 20 })}/> 
+                                name="full_name"
+                                {...register("full_name", { required: true, maxLength: 20 })}/> 
                             <input
                                 className='form-item'
                                 name="email"
@@ -161,6 +160,7 @@ const Subscribe = () => {
                                 {...register("email",{pattern:"[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"})}/> {errors.email && <p>{errors.email.message}</p>}
                             <input
                                 className='form-item'
+                                name="subject"
                                 placeholder="Subject"
                                 {...register("subject", { pattern: /^[A-Za-z]+$/i })}/>{errors.subject && <p>{errors.subject}</p>}
                     </div>

@@ -6,6 +6,7 @@ import './utils/api-config';
 import Home from './components/Home';
 import Layout from './components/Layout';
 
+
 function App() {
     useEffect(() => {
         TagManager.initialize({gtmId:'GTM-5CVVQGX'})
