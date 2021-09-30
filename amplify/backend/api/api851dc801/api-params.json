@@ -1,0 +1,48 @@
+{
+  "paths": [
+    {
+      "name": "/emailjs",
+      "lambdaFunction": "emailSendFunction",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH"
+        ]
+      },
+      "policyResourceName": "/emailjs"
+    }
+  ],
+  "resourceName": "api851dc801",
+  "apiName": "api851dc801",
+  "functionArns": [
+    {
+      "lambdaFunction": "emailSendFunction"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 1,
+    "authRoleName": "amplify-amplify9b99cecae9ab4-staging-183915-authRole",
+    "unAuthRoleName": "amplify-amplify9b99cecae9ab4-staging-183915-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "emailSendFunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
