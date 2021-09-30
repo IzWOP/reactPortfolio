@@ -8,15 +8,15 @@
         },
     
     
-          "functionemailSendFunctionName": {
+          "functionreactportfolio3c1d4b6cName": {
             "Type": "String",
-            "Default": "functionemailSendFunctionName"
+            "Default": "functionreactportfolio3c1d4b6cName"
           },
 
           
-          "functionemailSendFunctionArn": {
+          "functionreactportfolio3c1d4b6cArn": {
             "Type": "String",
-            "Default": "functionemailSendFunctionArn"
+            "Default": "functionreactportfolio3c1d4b6cArn"
           }
 
           
@@ -37,16 +37,16 @@
         
         
         
-      "api851dc801": {
+      "apidc59897f": {
         "Type": "AWS::ApiGateway::RestApi",
         "Properties": {
           "Description": "",
-          "Name": "api851dc801",
+          "Name": "apidc59897f",
           "Body": {
             "swagger": "2.0",
             "info": {
               "version": "2018-05-24T17:52:00Z",
-              "title": "api851dc801"
+              "title": "apidc59897f"
             },
             "host": {
                 "Fn::Join": [
@@ -82,7 +82,7 @@
             ],
             "paths": {
               
-              "/emailjs": {
+              "/emailjsFunction": {
                 "options": {
                   "consumes": [
                     "application/json"
@@ -149,12 +149,6 @@
                       }
                     }
                   },
-                  
-                    "security": [
-                        {
-                          "sigv4": []
-                        }
-                      ],
                   
                   "x-amazon-apigateway-integration": {
                     "responses": {
@@ -174,7 +168,7 @@
                             
                             {
 
-                                "Ref": "functionemailSendFunctionArn"
+                                "Ref": "functionreactportfolio3c1d4b6cArn"
                             },
                             
                             "/invocations"
@@ -187,7 +181,7 @@
                   }
                 }
               },
-              "/emailjs/{proxy+}": {
+              "/emailjsFunction/{proxy+}": {
                 "options": {
                   "consumes": [
                     "application/json"
@@ -255,12 +249,6 @@
                     }
                   },
                   
-                    "security": [
-                        {
-                          "sigv4": []
-                        }
-                      ],
-                  
                   "x-amazon-apigateway-integration": {
                     "responses": {
                       "default": {
@@ -279,7 +267,7 @@
                           
                           {
 
-                            "Ref": "functionemailSendFunctionArn"
+                            "Ref": "functionreactportfolio3c1d4b6cArn"
                           },
                           
                           "/invocations"
@@ -336,12 +324,12 @@
       
         
 
-        "functionemailSendFunctionPermissionapi851dc801": {
+        "functionreactportfolio3c1d4b6cPermissionapidc59897f": {
             "Type": "AWS::Lambda::Permission",
             "Properties": {
                 "FunctionName": 
                     {
-                        "Ref":  "functionemailSendFunctionName"
+                        "Ref":  "functionreactportfolio3c1d4b6cName"
                     },
                     
                     "Action": "lambda:InvokeFunction",
@@ -360,7 +348,7 @@
                             },
                             ":",
                             {
-                                "Ref": "api851dc801"
+                                "Ref": "apidc59897f"
                             },
                             "/*/*/*"
                         ]
@@ -371,7 +359,7 @@
         
         
 
-      "DeploymentAPIGWapi851dc801": {
+      "DeploymentAPIGWapidc59897f": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
@@ -385,7 +373,7 @@
             ]
           },
           "RestApiId": {
-            "Ref": "api851dc801"
+            "Ref": "apidc59897f"
           }
         }
       }
@@ -393,15 +381,15 @@
     "Outputs": {
         "RootUrl": {
             "Description": "Root URL of the API gateway",
-            "Value": {"Fn::Join": ["", ["https://", {"Ref": "api851dc801"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
+            "Value": {"Fn::Join": ["", ["https://", {"Ref": "apidc59897f"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
         },
         "ApiName": {
           "Description": "API Friendly name",
-          "Value": "api851dc801"
+          "Value": "apidc59897f"
         },
         "ApiId": {
           "Description": "API ID (prefix of API URL)",
-          "Value": {"Ref": "api851dc801"}
+          "Value": {"Ref": "apidc59897f"}
         }
     }
   }

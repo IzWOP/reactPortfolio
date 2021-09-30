@@ -1,7 +1,0 @@
-{
-  "lambdaLayers": [],
-  "secretNames": [
-    "TEMPLATE_ID",
-    "SERVICE_ID"
-  ]
-}

@@ -3,7 +3,6 @@ import {API} from 'aws-amplify';
 import {useForm} from "react-hook-form";
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-// import '../../utils/api-config';
 // stylesheets
 import './index.scss';
 
@@ -80,9 +79,8 @@ const Subscribe = () => {
 
     //send to internal API to hit mailchimp
     const onSubmitEmail = async (body) => {
-        console.log(body)
-        const apiName = 'emailjs';
-        const path ='/email';
+        const apiName = 'apidc59897f';
+        const path ='/emailjsFunction';
         const myInit = { 
            body
         }

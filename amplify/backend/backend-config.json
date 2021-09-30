@@ -27,7 +27,7 @@
     }
   },
   "function": {
-    "emailSendFunction": {
+    "reactportfolio3c1d4b6c": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda",
@@ -35,13 +35,13 @@
     }
   },
   "api": {
-    "api851dc801": {
+    "apidc59897f": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "emailSendFunction",
+          "resourceName": "reactportfolio3c1d4b6c",
           "attributes": [
             "Name",
             "Arn"

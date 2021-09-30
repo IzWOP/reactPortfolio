@@ -1,18 +1,4 @@
 /*
-Use the following code to retrieve configured secrets from SSM:
-
-const aws = require('aws-sdk');
-
-const { Parameters } = await (new aws.SSM())
-  .getParameters({
-    Names: ["TEMPLATE_ID","SERVICE_ID"].map(secretName => process.env[secretName]),
-    WithDecryption: true,
-  })
-  .promise();
-
-Parameters will be of the form { Name: 'secretName', Value: 'secretValue', ... }[]
-*/
-/*
 Copyright 2017 - 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
     http://aws.amazon.com/apache2.0/
@@ -44,12 +30,12 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-app.get('/emailjs', function(req, res) {
+app.get('/emailjsFunction', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
 });
 
-app.get('/emailjs/*', function(req, res) {
+app.get('/emailjsFunction/*', function(req, res) {
   // Add your code here
   res.json({success: 'get call succeed!', url: req.url});
 });
@@ -58,12 +44,12 @@ app.get('/emailjs/*', function(req, res) {
 * Example post method *
 ****************************/
 
-app.post('/emailjs', function(req, res) {
+app.post('/emailjsFunction', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
 
-app.post('/emailjs/*', function(req, res) {
+app.post('/emailjsFunction/*', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
@@ -72,12 +58,12 @@ app.post('/emailjs/*', function(req, res) {
 * Example put method *
 ****************************/
 
-app.put('/emailjs', function(req, res) {
+app.put('/emailjsFunction', function(req, res) {
   // Add your code here
   res.json({success: 'put call succeed!', url: req.url, body: req.body})
 });
 
-app.put('/emailjs/*', function(req, res) {
+app.put('/emailjsFunction/*', function(req, res) {
   // Add your code here
   res.json({success: 'put call succeed!', url: req.url, body: req.body})
 });
@@ -86,12 +72,12 @@ app.put('/emailjs/*', function(req, res) {
 * Example delete method *
 ****************************/
 
-app.delete('/emailjs', function(req, res) {
+app.delete('/emailjsFunction', function(req, res) {
   // Add your code here
   res.json({success: 'delete call succeed!', url: req.url});
 });
 
-app.delete('/emailjs/*', function(req, res) {
+app.delete('/emailjsFunction/*', function(req, res) {
   // Add your code here
   res.json({success: 'delete call succeed!', url: req.url});
 });
