@@ -37,16 +37,16 @@
         
         
         
-      "apidc59897f": {
+      "api6ced2efd": {
         "Type": "AWS::ApiGateway::RestApi",
         "Properties": {
           "Description": "",
-          "Name": "apidc59897f",
+          "Name": "api6ced2efd",
           "Body": {
             "swagger": "2.0",
             "info": {
               "version": "2018-05-24T17:52:00Z",
-              "title": "apidc59897f"
+              "title": "api6ced2efd"
             },
             "host": {
                 "Fn::Join": [
@@ -150,6 +150,12 @@
                     }
                   },
                   
+                    "security": [
+                        {
+                          "sigv4": []
+                        }
+                      ],
+                  
                   "x-amazon-apigateway-integration": {
                     "responses": {
                       "default": {
@@ -249,6 +255,12 @@
                     }
                   },
                   
+                    "security": [
+                        {
+                          "sigv4": []
+                        }
+                      ],
+                  
                   "x-amazon-apigateway-integration": {
                     "responses": {
                       "default": {
@@ -324,7 +336,7 @@
       
         
 
-        "functionreactportfolio3c1d4b6cPermissionapidc59897f": {
+        "functionreactportfolio3c1d4b6cPermissionapi6ced2efd": {
             "Type": "AWS::Lambda::Permission",
             "Properties": {
                 "FunctionName": 
@@ -348,7 +360,7 @@
                             },
                             ":",
                             {
-                                "Ref": "apidc59897f"
+                                "Ref": "api6ced2efd"
                             },
                             "/*/*/*"
                         ]
@@ -359,7 +371,7 @@
         
         
 
-      "DeploymentAPIGWapidc59897f": {
+      "DeploymentAPIGWapi6ced2efd60f69f3c": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
@@ -373,7 +385,7 @@
             ]
           },
           "RestApiId": {
-            "Ref": "apidc59897f"
+            "Ref": "api6ced2efd"
           }
         }
       }
@@ -381,15 +393,15 @@
     "Outputs": {
         "RootUrl": {
             "Description": "Root URL of the API gateway",
-            "Value": {"Fn::Join": ["", ["https://", {"Ref": "apidc59897f"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
+            "Value": {"Fn::Join": ["", ["https://", {"Ref": "api6ced2efd"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
         },
         "ApiName": {
           "Description": "API Friendly name",
-          "Value": "apidc59897f"
+          "Value": "api6ced2efd"
         },
         "ApiId": {
           "Description": "API ID (prefix of API URL)",
-          "Value": {"Ref": "apidc59897f"}
+          "Value": {"Ref": "api6ced2efd"}
         }
     }
   }

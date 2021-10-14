@@ -12,7 +12,7 @@ See the License for the specific language governing permissions and limitations 
 var express = require('express')
 var bodyParser = require('body-parser')
 var awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
-
+var emailjs = require('emailjs-com')
 // declare a new express app
 var app = express()
 app.use(bodyParser.json())
@@ -24,7 +24,9 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "*")
   next()
 });
-
+let service = process.env.SERVICE_ID
+let template = process.env.TEMPLATE_ID
+let user = process.env.USER_ID
 
 /**********************
  * Example get method *
@@ -44,23 +46,29 @@ app.get('/emailjsFunction/*', function(req, res) {
 * Example post method *
 ****************************/
 
-app.post('/emailjsFunction', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
+
 
 app.post('/emailjsFunction/*', function(req, res) {
   // Add your code here
   res.json({success: 'post call succeed!', url: req.url, body: req.body})
 });
 
-/****************************
-* Example put method *
-****************************/
-
 app.put('/emailjsFunction', function(req, res) {
   // Add your code here
-  res.json({success: 'put call succeed!', url: req.url, body: req.body})
+  async function sendEmail(req) {
+    res.json({body: req.body})
+    const response = await emailjs
+    .sendForm(service, template, req.body, user)
+    .then(function (results) {
+            res.json({result : results})
+    })
+    .catch(function (err) {
+      res.json({errResult: err})
+    });
+      res.json({stuff:response})
+    // res.json({stuff:req.body})
+}
+sendEmail(req)
 });
 
 app.put('/emailjsFunction/*', function(req, res) {

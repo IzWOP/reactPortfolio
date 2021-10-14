@@ -11,7 +11,7 @@
     "env": {
       "Type": "String"
     },
-    "emailAPI": {
+    "api6ced2efd": {
       "Type": "String"
     }
   },
@@ -52,7 +52,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -64,7 +64,7 @@
                           }
                         ]
                       },
-                      "/POST/emailjs/*"
+                      "/POST/emailjsFunction/*"
                     ]
                   ]
                 },
@@ -82,7 +82,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -94,7 +94,7 @@
                           }
                         ]
                       },
-                      "/POST/emailjs"
+                      "/POST/emailjsFunction"
                     ]
                   ]
                 },
@@ -112,7 +112,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -124,7 +124,7 @@
                           }
                         ]
                       },
-                      "/GET/emailjs/*"
+                      "/GET/emailjsFunction/*"
                     ]
                   ]
                 },
@@ -142,7 +142,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -154,7 +154,7 @@
                           }
                         ]
                       },
-                      "/GET/emailjs"
+                      "/GET/emailjsFunction"
                     ]
                   ]
                 },
@@ -172,7 +172,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -184,7 +184,7 @@
                           }
                         ]
                       },
-                      "/PUT/emailjs/*"
+                      "/PUT/emailjsFunction/*"
                     ]
                   ]
                 },
@@ -202,7 +202,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -214,7 +214,7 @@
                           }
                         ]
                       },
-                      "/PUT/emailjs"
+                      "/PUT/emailjsFunction"
                     ]
                   ]
                 },
@@ -232,7 +232,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -244,7 +244,7 @@
                           }
                         ]
                       },
-                      "/PATCH/emailjs/*"
+                      "/PATCH/emailjsFunction/*"
                     ]
                   ]
                 },
@@ -262,7 +262,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -274,7 +274,7 @@
                           }
                         ]
                       },
-                      "/PATCH/emailjs"
+                      "/PATCH/emailjsFunction"
                     ]
                   ]
                 },
@@ -292,7 +292,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -304,7 +304,7 @@
                           }
                         ]
                       },
-                      "/DELETE/emailjs/*"
+                      "/DELETE/emailjsFunction/*"
                     ]
                   ]
                 },
@@ -322,7 +322,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -334,7 +334,7 @@
                           }
                         ]
                       },
-                      "/DELETE/emailjs"
+                      "/DELETE/emailjsFunction"
                     ]
                   ]
                 }
@@ -375,7 +375,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -387,7 +387,7 @@
                           }
                         ]
                       },
-                      "/POST/emailjs/*"
+                      "/POST/emailjsFunction/*"
                     ]
                   ]
                 },
@@ -405,7 +405,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -417,7 +417,7 @@
                           }
                         ]
                       },
-                      "/POST/emailjs"
+                      "/POST/emailjsFunction"
                     ]
                   ]
                 },
@@ -435,7 +435,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -447,7 +447,7 @@
                           }
                         ]
                       },
-                      "/GET/emailjs/*"
+                      "/GET/emailjsFunction/*"
                     ]
                   ]
                 },
@@ -465,7 +465,7 @@
                       },
                       ":",
                       {
-                        "Ref": "emailAPI"
+                        "Ref": "api6ced2efd"
                       },
                       "/",
                       {
@@ -477,7 +477,187 @@
                           }
                         ]
                       },
-                      "/GET/emailjs"
+                      "/GET/emailjsFunction"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:execute-api:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":",
+                      {
+                        "Ref": "api6ced2efd"
+                      },
+                      "/",
+                      {
+                        "Fn::If": [
+                          "ShouldNotCreateEnvResources",
+                          "Prod",
+                          {
+                            "Ref": "env"
+                          }
+                        ]
+                      },
+                      "/PUT/emailjsFunction/*"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:execute-api:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":",
+                      {
+                        "Ref": "api6ced2efd"
+                      },
+                      "/",
+                      {
+                        "Fn::If": [
+                          "ShouldNotCreateEnvResources",
+                          "Prod",
+                          {
+                            "Ref": "env"
+                          }
+                        ]
+                      },
+                      "/PUT/emailjsFunction"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:execute-api:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":",
+                      {
+                        "Ref": "api6ced2efd"
+                      },
+                      "/",
+                      {
+                        "Fn::If": [
+                          "ShouldNotCreateEnvResources",
+                          "Prod",
+                          {
+                            "Ref": "env"
+                          }
+                        ]
+                      },
+                      "/PATCH/emailjsFunction/*"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:execute-api:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":",
+                      {
+                        "Ref": "api6ced2efd"
+                      },
+                      "/",
+                      {
+                        "Fn::If": [
+                          "ShouldNotCreateEnvResources",
+                          "Prod",
+                          {
+                            "Ref": "env"
+                          }
+                        ]
+                      },
+                      "/PATCH/emailjsFunction"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:execute-api:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":",
+                      {
+                        "Ref": "api6ced2efd"
+                      },
+                      "/",
+                      {
+                        "Fn::If": [
+                          "ShouldNotCreateEnvResources",
+                          "Prod",
+                          {
+                            "Ref": "env"
+                          }
+                        ]
+                      },
+                      "/DELETE/emailjsFunction/*"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:execute-api:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":",
+                      {
+                        "Ref": "api6ced2efd"
+                      },
+                      "/",
+                      {
+                        "Fn::If": [
+                          "ShouldNotCreateEnvResources",
+                          "Prod",
+                          {
+                            "Ref": "env"
+                          }
+                        ]
+                      },
+                      "/DELETE/emailjsFunction"
                     ]
                   ]
                 }

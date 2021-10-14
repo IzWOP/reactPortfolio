@@ -24,7 +24,8 @@ const Navbar = () => {
 
     const [width] = useWindowSize();
         if(width <= 960 ){
-            return <NavMobile />;
+            // return <NavMobile />;
+            return null;
         } else {
             return <NavDesk />;
          }

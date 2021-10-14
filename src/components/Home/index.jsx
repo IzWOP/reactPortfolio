@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </section>
             <div className='main-body'>
-                <section className='intro'>
+                <section className='intro' id='intro'>
                     <div className="container">
                         <div className="text-cont">
                             <div className="overtext">
@@ -47,7 +47,7 @@ const Home = () => {
                                     and operating for clients throughout USA. I have been building stunningly
                                     beautiful websites and making clients happy for the last year. Before that, I
                                     was in the marketing department at Infinite Peripherals helping build their
-                                    website and high convertinng landing pages.
+                                    website and high converting landing pages.
                                     <br/>
                                     <br/>
                                     Explore a wide variety of styles, personalise your features, and let me design
@@ -62,7 +62,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className="latest">
+                <section className="latest" id='values'>
                     <div className="container">
                         <h6>let me define</h6>
                         <div className="separator-container">
@@ -75,28 +75,22 @@ const Home = () => {
                             <div className="latest-item">
                                 <h6 className='numbers'>01.</h6>
                                 <h4>Quality</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                    dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                    nostrum corrupti!</p>
+                                <p>Quality is the most important value. Without quality, there would be no great experience on what you are purchasing. I strive for nothing less than great to make sure you feel satisfied with the work.</p>
                             </div>
                             <div className="latest-item">
                                 <h6 className='numbers'>02.</h6>
                                 <h4>Integrity</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                    dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                    nostrum corrupti!</p>
+                                <p>Integrity in my business is all I strive for. If you succeed, then I succeed. Business should always have integrity to build trush and a strong lasting relationship. </p>
                             </div>
                             <div className="latest-item">
                                 <h6 className='numbers'>03.</h6>
                                 <h4>Attention to Details</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt
-                                    dolorum fugit harum quod molestias repellat. Nam quibusdam aliquam aperiam
-                                    nostrum corrupti!</p>
+                                <p>Attention to small details are important to avoid failure and achieve satisfaction. Details are the things that push websites to success.</p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="cta-products">
+                <section className="cta-products" id='testimonial'>
                     <div className="container">
                         <h3>"Isaac is very educated in what is necessary to have a sucessful website. He
                             communicated clearly and set expectations from the beginning and made the whole
@@ -140,9 +134,36 @@ const Home = () => {
                             </div>
                             <div className="val-prop">
                                
-                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/infinite-peripherals-logo_fhzyuj.svg" alt="" />
+                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/infinite-peripherals-logo-stacked_ocesax.svg" alt="" />
                                 
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section className='me' id='me'>
+                    <div className="container">
+                    <div className="section-header">
+                        <h6>Get to Know Me</h6>
+                            <div className="separator-container">
+                            <div className="separator line-separator">
+                                ⌘
+                            </div>
+                        </div>
+                            <h3>Personally</h3>
+                        </div>
+                        <div className="imgCont">
+                            <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,w_200,h_200,q_auto,c_thumb,r_max/v1/portfolio/Isaac_Vazquez_web_developer.jpg" alt="" />
+                        </div>
+                        <div className="text-cont">
+                                <p>
+                                    Things I like to do, if you don't find me at home, you'll probably find me hiking, bike rides with my brother, backpacking through a country, or watching something Batman related.
+                                    <br/>
+                                    <br/>
+                                    I come from hispanic background and always enjoy some more stuff
+                                    <br/>
+                                    <br/>
+                                    I was always into computers and fixing my myspace page. That's what started my path of web development later in life. I started with Python and then moved into Javascript and React. I still enjoy working on the million side projects I have that never get done. 
+                                </p>
                         </div>
                     </div>
                 </section>

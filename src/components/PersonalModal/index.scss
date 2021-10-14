@@ -1,4 +1,33 @@
 @import '../../stylesheets/mixins.scss';
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_utilities.scss";
+@import "~bootstrap/scss/_mixins.scss";
+@import "~bootstrap/scss/_grid.scss";
+@import "~bootstrap/scss/_modal.scss";
+@font-face {
+    font-family: 'Verlag-Book';
+    src: url('../../fonts/Verlag-Book/Verlag-Book.otf') format("opentype");
+    src: url('../../fonts/Verlag-Book/Verlag-Book.eot?d7yf1v');
+    src: url('../../fonts/Verlag-Book/Verlag-Book.eot?#iefixd7yf1v') format('embedded-opentype'), url('../../fonts/Verlag-Book/Verlag-Book.woff?d7yf1v') format('woff'), url('../../fonts/Verlag-Book/Verlag-Book.ttf?d7yf1v') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Verlag-Book';
+    src: url('../../fonts/Verlag-Book/Verlag-Bold.otf') format("opentype");
+    src: url('../../fonts/Verlag-Book/Verlag-Bold.eot?d7yf1v');
+    src: url('../../fonts/Verlag-Book/Verlag-Bold.eot?#iefixd7yf1v') format('embedded-opentype'), url('../../fonts/Verlag-Book/Verlag-Bold.woff?d7yf1v') format('woff'), url('../../fonts/Verlag-Book/Verlag-Bold.ttf?d7yf1v') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Slim-Joe';
+    src: url('../../fonts/Slim-Joe/Slim-Joe.eot?d7yf1v');
+    src: url('../../fonts/Slim-Joe/Slim-Joe.eot?#iefixd7yf1v') format('embedded-opentype'), url('../../fonts/Slim-Joe/Slim-Joe.woff?d7yf1v') format('woff'), url('../../fonts/Slim-Joe/Slim-Joe.ttf?d7yf1v') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .personal-modal{
     width: 100%;
@@ -18,6 +47,7 @@
         h3{
             font-size: 3rem;
             text-transform: capitalize;
+            margin-top: 0;
         }
         h6 {
 
@@ -103,16 +133,18 @@
                 z-index: 10;
                 margin: 0;
                 @include breakpoint(md){
+                    width: auto;
                     z-index: -1;
                     opacity: 0;
                     transition: all .3s;
                     transform: translate(0%,0%);
-                    text-align: left;
+                    text-align: center;
                     padding: 5rem;
-                    font-size: 4rem;
+                    font-size: 3.7rem;
                 }
          
             }
+         
             img{
                 width: 100%;
                 height: 100%;
@@ -128,7 +160,7 @@
     }
 }
 .modal-backdrop.show{
-    opacity: .8;
+    opacity: 0.9;
 }
 .fade.modal.show{
     .modal-content{
@@ -154,7 +186,7 @@
                     border: transparent;
                     margin: 0;
                     @include breakpoint(smd){
-                        margin-left: -1rem;
+                        margin-left: -1.5rem;
 
                     }
                 }
@@ -200,9 +232,19 @@
                     margin: auto;
                 }
                 .text-box{
-                    width: 25%;
+                    margin-bottom: 2rem;
+                    @include breakpoint(md){
+                        width: 25%;
+
+                    }
                     h5{
                         text-align: left;
+                    }
+                    .d-none{
+                        display: none;
+                    }
+                    .normal{
+                        color:#fff;
                     }
                 }
                 .image-box{
@@ -219,7 +261,7 @@
                             margin-bottom: 2rem;
                         }
                     }
-                    &_top,&_bottom{
+                    &_top,&_bottom,&_extra{
                         display: flex;
                         flex-direction: column;
                         @include breakpoint(smd){
@@ -232,6 +274,10 @@
                         }
                        
                     }
+
+                    &_extra{
+                        margin: 2rem 0;
+                    }
                 }
                 img{
                     width: 100%;
@@ -240,7 +286,6 @@
                     @include breakpoint(smd){
                         margin-bottom: 0;
                         width: 48%;
-                        height: auto;
                     }
                     @include breakpoint(lg){
                         max-width: 350px;

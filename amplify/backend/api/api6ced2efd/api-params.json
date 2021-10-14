@@ -1,0 +1,50 @@
+{
+    "paths": [
+        {
+            "name": "/emailjsFunction",
+            "lambdaFunction": "reactportfolio3c1d4b6c",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/emailjsFunction"
+        }
+    ],
+    "resourceName": "api6ced2efd",
+    "apiName": "api6ced2efd",
+    "functionArns": [
+        {
+            "lambdaFunction": "reactportfolio3c1d4b6c"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-amplify9b99cecae9ab4-staging-183915-authRole",
+        "unAuthRoleName": "amplify-amplify9b99cecae9ab4-staging-183915-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "reactportfolio3c1d4b6c",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "60f69f3c"
+}

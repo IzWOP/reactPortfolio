@@ -198,6 +198,31 @@ $green: #1ECD97;
         }
         .submit {
             max-width: 400px;
+            transition-property: all;
+            &.pending{
+                max-width: 20px;
+                padding: 20px;
+                content: " ";
+                animation-name: spin;
+                animation-duration: 5000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear; 
+                color: transparent;
+                border: 5px solid #000;
+                border-left-color: #f7f7f7;
+                border-radius: 50%;
+                background: transparent;
+                transition-property: all;
+                transition-duration: 1s;
+                &::after{
+                    content: " ";
+                }
+            }
+            &.complete{
+                &::after{
+                    content: icon;
+                }
+            }
         }
         .active {
             display: block;
@@ -303,5 +328,14 @@ $green: #1ECD97;
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
     }
 }

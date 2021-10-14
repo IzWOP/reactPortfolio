@@ -1,5 +1,5 @@
 import React, {useState, useEffect,useRef} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, animateScroll as scroll} from 'react-scroll';
 //stylesheets
 import './index.scss'
 
@@ -7,9 +7,6 @@ const NavDesk = () => {
     //set scroll state to change background color
     const [scrollState, setScrollState] = useState("top");
     //checks anything clicked to match set navbar classes
-
-      //variable to update later
-      
       //click outsite of nav reference
       const ref = useRef(null);
         useEffect(() => {
@@ -40,33 +37,33 @@ const NavDesk = () => {
 
     return <> 
     <nav className='navbar'>
-        <Link to='/' className='navbar-logo'>
+        <div onClick={scroll.scrollToTop} className='navbar-logo'>
             Isaac V.
-        </Link>
+        </div>
         
         <div className='nav-links' ref={ref}>
             <div>
-                <Link to=''>
-                    <button className='products'>About</button>
+                <Link to='intro' spy={true} smooth={true} offset={-70} duration={300}>
+                    <button className='products'>Intro</button>
                 </Link>
             </div>
             <div>
-            <Link to=''>
-                <button className='products'>Reviews</button>
+            <Link to='values' spy={true} smooth={true} offset={-70} duration={300}>
+                <button className='products'>Values</button>
                 </Link>
             </div>
             <div>
-            <Link to=''>
-                <button className='products'>Testimonials</button>
+            <Link to='testimonial' spy={true} smooth={true} offset={-150}  duration={300}>
+                <button className='products'>Testimonial</button>
                 </Link>
             </div>
             <div>
-            <Link to=''>
-                <button className='products'>Numbers</button>
+            <Link to='projects' spy={true} smooth={true} offset={-20} duration={300}>
+                <button className='products'>Projects</button>
                 </Link>
             </div>
             <div>
-                <Link to=''>
+                <Link to='contact' spy={true} smooth={true} offset={-70} duration={300}>
                 <button className='products' >Contact</button>
                 </Link>
             </div>
