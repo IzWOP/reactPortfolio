@@ -234,6 +234,7 @@ $green: #1ECD97;
         .submit {
             max-width: 400px;
             transition-property: all;
+            
             &.pending{
                 max-width: 20px;
                 padding: 20px;

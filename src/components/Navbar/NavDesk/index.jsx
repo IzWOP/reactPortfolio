@@ -33,7 +33,7 @@ const NavDesk = () => {
                 //stops infinite loops
                 document.removeEventListener("scroll", listener)
             };
-        }, [scrollState])
+        })
 
 
     return <nav className='navbar'>
@@ -49,7 +49,7 @@ const NavDesk = () => {
             </div>
             <div>
             <Link to='values' spy={true} smooth={true} offset={-70} duration={300}>
-                <button className='products'>Values</button>
+                <button className='products'>Services</button>
                 </Link>
             </div>
             <div>
