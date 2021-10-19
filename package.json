@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^1.2.20",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -11,11 +12,12 @@
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@hookform/resolvers": "^2.8.2",
     "aos": "^2.3.4",
+    "aws-amplify": "^4.3.2",
     "bootstrap": "5.1.0",
     "cra-template": "1.1.2",
     "jquery": "^3.6.0",
     "node-sass": "^6.0.1",
-    "react": "^17.0.2",
+    "react": "^16.0.0",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
@@ -26,7 +28,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-yup": "^1.23.0",
-    "yup": "^0.32.9"
+    "yup": "^0.29.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -53,8 +55,6 @@
     ]
   },
   "devDependencies": {
-    "aws-amplify": "^4.3.0",
-    "aws-amplify-react": "^5.1.1",
     "emailjs-com": "^3.2.0"
   }
 }
