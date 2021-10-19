@@ -24,7 +24,7 @@ const Home = () => {
                             data-aos="fade-up"
                             data-aos-delay="2000"
                             data-aos-duration="2000"
-                            data-aos-easing="ease-out-cubic">Badass web developer and a great marketer</h2>
+                            data-aos-easing="ease-out-cubic">Badass web developer and a great digital marketer</h2>
 
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const Home = () => {
                 </section>
                 <section className="latest" id='values'>
                     <div className="container">
-                        <h6>let me define</h6>
+                        <h6>Let Me Define</h6>
                         <div className="separator-container">
                             <div className="separator line-separator">
                                 ⌘
@@ -121,7 +121,7 @@ const Home = () => {
                 <section className="val-props">
                     <div className="container">
                         <div className="text-box">
-                        <h6>My history</h6>
+                        <h6>My History</h6>
                             <div className="separator-container">
                             <div className="separator line-separator">
                                 ⌘
@@ -150,6 +150,11 @@ const Home = () => {
                             <div className="val-prop">
                                
                                     <img src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/infinite-peripherals-logo-stacked_ocesax.svg" alt="" />
+                                
+                            </div>
+                            <div className="val-prop">
+                               
+                                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1634620915/portfolio/clutch_city_coatings_logo.jpg" alt="" />
                                 
                             </div>
                         </div>
