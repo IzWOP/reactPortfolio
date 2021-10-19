@@ -1,5 +1,8 @@
 import React from 'react';
 import Subscribe from './Subscribe';
+import {animateScroll as scroll} from 'react-scroll';
+import {Link as Link1} from 'react-scroll';
+import { Link as Link2 } from 'react-router-dom';
 //styling
 import './index.scss';
 
@@ -8,36 +11,43 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLinkedinIn, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
+    // const [scrollState, setScrollState] = useState("top");
     return (
         <footer>
             <Subscribe/>
             <section className='footer'>
                     <div className='links'>
-                        <div className="">
-                            <h6>Home</h6>
+                        <div onClick={scroll.scrollToTop} className="">
+                            <h6>Top</h6>
                         </div>
-                        <div className="">
-                            <h6>Company</h6>
-                        </div>
-                        <div className="">
-                            <h6>Portfolio</h6>
-                        </div>
-                        <div className="">
+                        <Link1 to='intro' spy={true} smooth={true} offset={-70} duration={300}>
+                            <h6>Intro</h6>
+                        </Link1>
+                        <Link1 to='values' spy={true} smooth={true} offset={-70} duration={300}>
+                            <h6>Services</h6>
+                        </Link1>
+                        <Link1 to='testimonial' spy={true} smooth={true} offset={-150} duration={300}>
+                            <h6>Testimonial</h6>
+                        </Link1>
+                        <Link1 to='projects' spy={true} smooth={true} offset={-20} duration={300}>
+                            <h6>Projects</h6>
+                        </Link1>
+                        <Link1 to='contact' spy={true} smooth={true} offset={-70} duration={300}>
                             <h6>Contact</h6>
-                        </div>
+                        </Link1>
                     </div>
 
  
                     <div className="socialmedia-links">
-                        <div className="socialmedia-links_instagram">
+                        <Link2 to='https://www.instagram.com/izzyhv_/' className="socialmedia-links_instagram">
                             <FontAwesomeIcon icon={faInstagram}/>
-                        </div>
-                        <div className="socialmedia-links_twitter">
+                        </Link2>
+                        <Link2 to='https://twitter.com/izzyhv_' className="socialmedia-links_twitter">
                             <FontAwesomeIcon icon={faTwitter}/>
-                        </div>
-                        <div className="socialmedia-links_linkedin">
+                        </Link2>
+                        <Link2 to='https://www.linkedin.com/in/isaachv/' className="socialmedia-links_linkedin">
                             <FontAwesomeIcon icon={faLinkedinIn}/>
-                        </div>
+                        </Link2>
                     </div>
                         {/* copyright and signature at bottom of page */}
                     <div className="footer-center">

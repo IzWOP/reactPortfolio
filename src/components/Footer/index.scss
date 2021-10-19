@@ -74,7 +74,8 @@
                 width: 20%;
                 order: 3;
             }
-            div {
+            a {
+                color: #9A9A9A;
                 cursor: pointer;
                 width: 35px;
                 height: 35px;
@@ -85,6 +86,7 @@
                 touch-action: manipulation;
                 transition: color 0.3s;
                 margin: 0 .5rem;
+                text-decoration: none;
                 @include breakpoint(md) {
                     margin: 0 .5rem;
                     width: auto;
@@ -103,7 +105,12 @@
             }
             &_instagram {
                 &:hover {
-                    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    &:hover {
+                        color:  #fd5949;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
             }
         }
