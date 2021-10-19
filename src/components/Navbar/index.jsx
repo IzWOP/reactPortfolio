@@ -1,6 +1,6 @@
 import React,{useLayoutEffect,useState} from 'react';
 
-import NavMobile from './NavMobile';
+// import NavMobile from './NavMobile';
 import NavDesk from './NavDesk';
 
 
@@ -24,7 +24,8 @@ const Navbar = () => {
 
     const [width] = useWindowSize();
         if(width <= 960 ){
-            return <NavMobile />;
+            // return <NavMobile />;
+            return null;
         } else {
             return <NavDesk />;
          }
