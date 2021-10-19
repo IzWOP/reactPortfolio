@@ -88,12 +88,16 @@ const Subscribe = () => {
                 <div className="separator-container">
                     <div className="separator line-separator">⌘</div>
                 </div>
-                <p>Would you want to talk about something?
+                <p  data-aos="fade-up"
+                data-aos-delay="500"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-out-cubic">Would you want to talk about something?
                     <br/>Just send me your message and I will happily chat</p>
                 <form
                     id="contact"
                     onSubmit={handleSubmit(onSubmitEmail)}
                     data-aos="fade-up"
+                    data-aos-delay="1000"
                     data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">
                     <div className="form-top">

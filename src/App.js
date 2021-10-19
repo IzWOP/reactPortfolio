@@ -5,7 +5,9 @@ import AOS from 'aos';
 // import './utils/api-config';
 import Home from './components/Home';
 import Layout from './components/Layout';
-
+//global styling
+import 'aos/src/sass/aos.scss';
+import './stylesheets/global.scss';
 
 function App() {
     useEffect(() => {

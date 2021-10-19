@@ -168,26 +168,38 @@ const PersonalModal = () => {
         </div>
         <div className="container">
             <div className="top-projects">
-                <div className="project" onClick={() => handleShow({selected: 'project1'})}>
+                <div data-aos="fade-left"
+                                data-aos-delay="500"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project1'})}>
                 <h3>Ivanti & <br/> 
                     Infinite Peripherals Landing Page
                 </h3>
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto,c_thumb/v1/portfolio/ivanti-infinite-peripherals.jpg" alt=""/>
                 </div>
-                <div className="project" onClick={() => handleShow({selected: 'project2'})}>
+                <div data-aos="fade-left"
+                                data-aos-delay="1000"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project2'})}>
                     <h3>Travel Industry Landing Page</h3>
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/flight-hero_vmwl0o.jpg" alt=""/>
                 </div>
-                <div className="project" onClick={() => handleShow({selected: 'project3'})}>
+                <div data-aos="fade-left"
+                                data-aos-delay="1500"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project3'})}>
                     <h3>Post NRF 2020 Landing Page</h3>
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/post-nrf-infinite-peripherals-hero_xolrow.jpg" alt=""/>
                 </div>
             </div>
             <div className="bottom-projects">
-                <div className="project" onClick={() => handleShow({selected: 'project4'})}>
+                <div data-aos="fade-left"
+                                data-aos-delay="750"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project4'})}>
                     <h3>Essential Heros Landing Page</h3>
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/protect_your_heros.jpg" alt=""/>
