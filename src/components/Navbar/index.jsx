@@ -1,6 +1,6 @@
 import React,{useLayoutEffect,useState} from 'react';
 
-import NavMobile from './NavMobile';
+// import NavMobile from './NavMobile';
 import NavDesk from './NavDesk';
 
 

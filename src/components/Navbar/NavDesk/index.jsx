@@ -1,5 +1,6 @@
-import React, {useState, useEffect,useRef} from 'react';
-import {Link, animateScroll as scroll} from 'react-scroll';
+import React, {useState, useEffect} from 'react';
+import {Link} from 'react-scroll';
+import {animateScroll as scroll} from 'react-scroll';
 //stylesheets
 import './index.scss'
 
@@ -8,22 +9,23 @@ const NavDesk = () => {
     const [scrollState, setScrollState] = useState("top");
     //checks anything clicked to match set navbar classes
       //click outsite of nav reference
-      const ref = useRef(null);
         useEffect(() => {
             //checks state to make sure it matches
             let listener = null
             //listening to set state to update navbar background
+            let nav = document.querySelector('nav');
             listener = document.addEventListener("scroll", e => {
                 var scrolled = document.scrollingElement.scrollTop
                 if (scrolled >= 75) {
                   if (scrollState !== "amir") {
                     setScrollState("amir")
-                    document.querySelector('nav').classList.add('scrolled')
+                    ;
+                    nav.classList.add('scrolled');
                   }
                 } else {
                   if (scrollState !== "top") {
                     setScrollState("top")
-                    document.querySelector('nav').classList.remove('scrolled')
+                    nav.classList.remove('scrolled');
                   }
                 }
               })
@@ -31,17 +33,15 @@ const NavDesk = () => {
                 //stops infinite loops
                 document.removeEventListener("scroll", listener)
             };
-           
-        }, [ref,scrollState])
+        }, [scrollState])
 
 
-    return <> 
-    <nav className='navbar'>
-        <div onClick={scroll.scrollToTop} className='navbar-logo'>
+    return <nav className='navbar'>
+        <div className='navbar-logo' onClick={scroll.scrollToTop}>
             Isaac V.
         </div>
         
-        <div className='nav-links' ref={ref}>
+        <div className='nav-links'>
             <div>
                 <Link to='intro' spy={true} smooth={true} offset={-70} duration={300}>
                     <button className='products'>Intro</button>
@@ -69,7 +69,6 @@ const NavDesk = () => {
             </div>
         </div>
     </nav> 
-    </>
 }
 
 export default NavDesk;

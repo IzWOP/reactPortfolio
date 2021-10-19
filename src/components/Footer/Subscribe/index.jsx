@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useForm} from "react-hook-form";
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -7,55 +7,73 @@ import emailjs from 'emailjs-com';
 import './index.scss';
 
 const emailSchema = yup.object({
-    to_name: yup.string().required('Please enter name'),
-    email: yup.string().email().required('Email is required'),
+    to_name: yup
+        .string()
+        .required('Please enter name'),
+    email: yup
+        .string()
+        .email()
+        .required('Email is required'),
     subject: yup.string(),
-    message: yup.string().required('Please enter a message')
-    });
+    message: yup
+        .string()
+        .required('Please enter a message')
+});
 
 const Subscribe = () => {
-    const [subscribeStatus,
+    const [emailStatus,
         setStatus] = useState({email_status: null})
     const [emailResult,
         setResult] = useState({email_result: null})
-    const {register, handleSubmit, formState: {errors}} = useForm({
-        resolver: yupResolver(emailSchema)
-    });
+    const {register, handleSubmit, reset, formState: {
+            errors
+        }} = useForm({resolver: yupResolver(emailSchema)});
 
-    const onSubmitEmail =  async (body) => {
+    let button = document.querySelector('.submit');
+    const onSubmitEmail = async(body) => {
         // e.preventDefault();
-        let form = {body}
-        let submitButton = document.querySelector('.submit');
-        submitButton.classList.add = 'pending';
-
-        setTimeout(() => {
-            submitButton.classList.remove="pending";
-            submitButton.classList.add = 'complete'
-    }, 3000);
-
-        // return await emailjs.send('service_gcqpzyh', 'template_tfuqnxf', form.body, 'user_Qp9GHgtVL7D2S3V30dYlK')
-        //   .then((result) => {
-        //       if (result.text == 'OK') {
-        //           let text= result.text
-        //           setStatus({email_status: text})
-        //       }
-        //   }, (error) => {
-        //       console.log(error.text);
-        //   });
-        console.log(form.body);
+        let form = {
+            body
+        }
+        console.log(button)
+        return await emailjs
+            .send('service_gcqpzyh', 'template_tfuqnxf', form.body, 'user_Qp9GHgtVL7D2S3V30dYlK')
+            .then((result) => {
+                if (result.text === 'OK') {
+                    let text = result.text
+                    button.classList.add('pending');
+                    setTimeout(() => {
+                        setStatus({email_status: text})
+                        console.log('worked');
+                        button.classList.remove("pending");
+                        button.classList.add('complete');
+                    }, 3000);
+                }
+            }, (error) => {
+                console.log(error.text);
+                button.classList.add("pending");
+                setTimeout(() => {
+                    button.classList.remove("pending");
+                    button.classList.add('errors');
+        
+                }, 3000);
+            });
+        // console.log(form.body);
     }
     //setting the status to notify the user if email subscription succeeded
-    // useEffect(() => {
-    //     switch (subscribeStatus.email_status) {
-    //         case 'OK':
-    //             console.log('worked');
-    //             break;
-    //         default:
-    //             //setting the state just another fallback
-    //             setStatus({email_status: null});
-    //             break;
-    //     }
-    // }, [emailResult]);
+    useEffect(() => {
+        switch (emailStatus.email_status) {
+            case 'OK':
+
+                setResult({email_result: "Email was sent!"});
+                reset();
+                break;
+            default:
+                //setting the state just another fallback
+                setResult({email_status: null});
+                break;
+        }
+    }, [emailStatus, reset]);
 
     return (
         <section className='send_email'>
@@ -73,41 +91,47 @@ const Subscribe = () => {
                 <p>Would you want to talk about something?
                     <br/>Just send me your message and I will happily chat</p>
                 <form
-                id="contact"
+                    id="contact"
                     onSubmit={handleSubmit(onSubmitEmail)}
                     data-aos="fade-up"
                     data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">
-                        <div className="form-top">
-                            <input
-                                className='form-item'
-                                placeholder="Full name"
-                                name="to_name"
-                                {...register("to_name")}/>
-                                {errors.to_name && <p>{errors.to_name.message}</p>}
+                    <div className="form-top">
+                        <div className='form-item'>
+                            <input placeholder="Full name" name="to_name" {...register("to_name")}/> {errors.to_name && <p className='err name'>{errors.to_name.message}</p>}
+                        </div>
+                        <div className='form-item'>
+
                             <input
                                 className='form-item'
                                 name="email"
                                 placeholder="Email"
-                                {...register("email",{pattern:"[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"})}/> 
-                                {errors.email && <p>{errors.email.message}</p>}
+                                {...register("email",{pattern:"[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"})}/> {errors.email && <p className='err message'>{errors.email.message}</p>}
+                        </div>
+                        <div className='form-item'>
+                            
+
                             <input
-                                className='form-item'
                                 name="subject"
                                 placeholder="Subject"
                                 {...register("subject")}/>
-                                {errors.subject && <p>{errors.subject.message}</p>}
-                                
+                            
+                        </div>
+
                     </div>
                     <div className="form-bottom">
+                        <div className='form-item'>
                         <textarea
-                            className='form-item'
+                            
                             placeholder="Message"
                             name="message"
-                            {...register("message")}/>
-                            {errors.message && <p>{errors.message.message}</p>}
+                            {...register("message")}/> {errors.message && <p className='error message'>{errors.message.message}</p>}
+                        </div>
                     </div>
                     <button className='submit' type="submit" value="Submitt"></button>
+                    {emailResult.result !== null && <div className='email-status'>
+                        {emailResult.email_result}
+                    </div>}
                 </form>
 
             </div>

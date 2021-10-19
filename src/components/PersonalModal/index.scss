@@ -43,7 +43,9 @@
         margin-top: 4rem;
         grid-column: 1/-1;
         grid-row: 1/2;
-        margin-bottom: 4rem;
+        @include breakpoint(md){
+            margin-bottom: 4rem;
+        }
         h3{
             font-size: 3rem;
             text-transform: capitalize;
