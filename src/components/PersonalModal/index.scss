@@ -162,9 +162,13 @@
     }
 }
 .modal-backdrop.show{
-    opacity: 0.9;
+    opacity: 0.4;
+}
+.modal{
+    background-color: rgba(0, 0, 0, .4);
 }
 .fade.modal.show{
+    background-color:rgba(0, 0, 0, .4) ;
     .modal-content{
         background-color: transparent;
 
