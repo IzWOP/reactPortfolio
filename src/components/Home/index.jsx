@@ -13,7 +13,17 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './index.scss';
 
 const Home = () => {
+    window.dataLayer.push({
+        event: 'pageview'
+      });
+     const handleClick =()=>{
 
+        window.dataLayer.push({
+            event: 'cta1Click'
+            });
+
+        
+      }
     return <> 
     <div className="home">
         <section className='billboard'>
@@ -58,7 +68,7 @@ const Home = () => {
                         <div>
                             <p
                                 data-aos="fade-up"
-                                data-aos-delay="2000"
+                                data-aos-delay="1000"
                                 data-aos-duration="2000"
                                 data-aos-easing="ease-out-cubic">
                                 I'm Isaac, a talented digital marketer and leader based in California and
@@ -137,7 +147,7 @@ const Home = () => {
                             </p>
                         </div>
                         <div data-aos="fade-left"
-                                data-aos-delay="2250"
+                                data-aos-delay="750"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic"  className="latest-item">
                             <h6 data-aos="fade-left"
@@ -151,7 +161,7 @@ const Home = () => {
                             </p>
                         </div>
                         <div data-aos="fade-left"
-                                data-aos-delay="2750"
+                                data-aos-delay="1250"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className="latest-item">
                             <h6 data-aos="fade-left"
@@ -164,7 +174,7 @@ const Home = () => {
                                 website or add a new website page. Help is available.</p>
                         </div>
                         <div  data-aos="fade-left"
-                                data-aos-delay="3000"
+                                data-aos-delay="1750"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className="latest-item">
                             <h6 data-aos="fade-left"
@@ -191,11 +201,12 @@ const Home = () => {
                         <br/>Clutch City Coatings</p>
                     <Link 
                     to='contact'
+                    
                     data-aos="fade-up"
                                 data-aos-delay="3500"
                                 data-aos-duration="2000"
                                 data-aos-easing="ease-out-cubic" >
-                        <button className='cta'>Contact Isaac</button>
+                        <button onClick={handleClick} className='cta'>Contact Isaac</button>
                     </Link>
                 </div>
             </section>

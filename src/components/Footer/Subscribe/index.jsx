@@ -32,10 +32,15 @@ const Subscribe = () => {
     let button = document.querySelector('.submit');
     const onSubmitEmail = async(body) => {
         // e.preventDefault();
+        window.dataLayer.push({
+            event: 'formSubmit'
+            });
         let form = {
             body
         }
-        console.log(button)
+        window.dataLayer.push({
+            event: 'formClick'
+            });
         return await emailjs
             .send('service_gcqpzyh', 'template_tfuqnxf', form.body, 'user_Qp9GHgtVL7D2S3V30dYlK')
             .then((result) => {
@@ -44,13 +49,12 @@ const Subscribe = () => {
                     button.classList.add('pending');
                     setTimeout(() => {
                         setStatus({email_status: text})
-                        console.log('worked');
                         button.classList.remove("pending");
                         button.classList.add('complete');
                     }, 3000);
                 }
             }, (error) => {
-                console.log(error.text);
+                setStatus({email_status: 'err'});
                 button.classList.add("pending");
                 setTimeout(() => {
                     button.classList.remove("pending");
@@ -64,10 +68,18 @@ const Subscribe = () => {
     useEffect(() => {
         switch (emailStatus.email_status) {
             case 'OK':
-
+                window.dataLayer.push({
+                    event: 'formSubmit'
+                    });
                 setResult({email_result: "Email was sent!"});
                 reset();
                 break;
+            case 'err':
+                window.dataLayer.push({
+                    event: 'formFail'
+                    });
+                    setResult({email_status: null});
+                    break;
             default:
                 //setting the state just another fallback
                 setResult({email_status: null});
