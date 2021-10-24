@@ -17,7 +17,6 @@ const Home = () => {
         event: 'pageview'
       });
      const handleClick =()=>{
-
         window.dataLayer.push({
             event: 'cta1Click'
             });
