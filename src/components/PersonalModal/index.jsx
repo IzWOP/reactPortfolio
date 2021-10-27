@@ -160,7 +160,7 @@ const PersonalModal = () => {
 
     return <section className="personal-modal" id='projects'>
         <div className="text-box">
-        <h5>Look at my</h5>
+        <h6>Look at my</h6>
                     <div className="separator-container">
                         <div className="separator line-separator">⌘</div>
                     </div>
@@ -176,7 +176,7 @@ const PersonalModal = () => {
                     Infinite Peripherals Landing Page
                 </h3>
                     <div className="background"></div>
-                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto,c_thumb/v1/portfolio/ivanti-infinite-peripherals.jpg" alt=""/>
+                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto,c_thumb/v1/portfolio/ivanti-infinite-peripherals.jpg" alt="" loading="lazy"/>
                 </div>
                 <div data-aos="fade-left"
                                 data-aos-delay="1000"
@@ -184,7 +184,7 @@ const PersonalModal = () => {
                                 data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project2'})}>
                     <h3>Travel Industry Landing Page</h3>
                     <div className="background"></div>
-                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/flight-hero_vmwl0o.jpg" alt=""/>
+                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/flight-hero_vmwl0o.jpg" alt="" loading="lazy"/>
                 </div>
                 <div data-aos="fade-left"
                                 data-aos-delay="1500"
@@ -192,7 +192,7 @@ const PersonalModal = () => {
                                 data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project3'})}>
                     <h3>Post NRF 2020 Landing Page</h3>
                     <div className="background"></div>
-                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/post-nrf-infinite-peripherals-hero_xolrow.jpg" alt=""/>
+                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/post-nrf-infinite-peripherals-hero_xolrow.jpg" alt="" loading="lazy"/>
                 </div>
             </div>
             <div className="bottom-projects">
@@ -202,7 +202,7 @@ const PersonalModal = () => {
                                 data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project4'})}>
                     <h3>Essential Heros Landing Page</h3>
                     <div className="background"></div>
-                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/protect_your_heros.jpg" alt=""/>
+                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/protect_your_heros.jpg" alt="" loading="lazy"/>
                 </div>
                 <div className="project" >
                 {/* onClick={() => handleShow({selected: 'project5'})} */}
@@ -235,16 +235,16 @@ const PersonalModal = () => {
                         </div>
                         <div className="image-box">
                             <div className="image-box_top">
-                                <img src={selectedProject.project.image.src1} alt={selectedProject.project.image.alt1} />
-                                <img src={selectedProject.project.image.src2} alt={selectedProject.project.image.alt2} />
+                                <img src={selectedProject.project.image.src1} alt={selectedProject.project.image.alt1} loading="lazy"/>
+                                <img src={selectedProject.project.image.src2} alt={selectedProject.project.image.alt2} loading="lazy"/>
                             </div>
                             <div className="image-box_bottom">
-                                <img src={selectedProject.project.image.src3} alt={selectedProject.project.image.alt3} />
-                                <img src={selectedProject.project.image.src4} alt={selectedProject.project.image.alt4} />
+                                <img src={selectedProject.project.image.src3} alt={selectedProject.project.image.alt3} loading="lazy"/>
+                                <img src={selectedProject.project.image.src4} alt={selectedProject.project.image.alt4} loading="lazy"/>
                             </div>
                             <div className="image-box_extra">
-                                <img src={selectedProject.project.image.src5} alt={selectedProject.project.image.alt5} />
-                                <img src={selectedProject.project.image.src6} alt={selectedProject.project.image.alt6} />
+                                <img src={selectedProject.project.image.src5} alt={selectedProject.project.image.alt5} loading="lazy"/>
+                                <img src={selectedProject.project.image.src6} alt={selectedProject.project.image.alt6} loading="lazy"/>
                             </div>
                         </div>
                     </div>

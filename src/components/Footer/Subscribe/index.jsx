@@ -91,20 +91,20 @@ const Subscribe = () => {
         <section className='send_email'>
             <div className='background'></div>
             <div className="container">
-                <h5
+                <h3
                     data-aos="fade-up"
                     data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">
                     Get in Touch
-                </h5>
+                </h3>
                 <div className="separator-container">
                     <div className="separator line-separator">⌘</div>
                 </div>
-                <p  data-aos="fade-up"
+                <h6  data-aos="fade-up"
                 data-aos-delay="500"
                     data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">Would you want to talk about something?
-                    <br/>Just send me your message and I will happily chat</p>
+                    <br/>Just send me your message and I will happily chat</h6>
                 <form
                     id="contact"
                     onSubmit={handleSubmit(onSubmitEmail)}
