@@ -160,11 +160,15 @@ const PersonalModal = () => {
 
     return <section className="personal-modal" id='projects'>
         <div className="text-box">
-        <h6>Look at my</h6>
+        <h6 data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic">Look at my</h6>
                     <div className="separator-container">
                         <div className="separator line-separator">⌘</div>
                     </div>
-        <h3> projects</h3>
+        <h3 data-aos="fade-up"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic"> projects</h3>
         </div>
         <div className="container">
             <div className="top-projects">

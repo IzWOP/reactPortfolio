@@ -243,16 +243,20 @@ const Body = ()=>{
             <section className='me' id='me'>
                 <div className="container">
                     <div className="section-header">
-                        <h6>Get to Know Me</h6>
+                        <h6 data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic">Get to Know Me</h6>
                         <div className="separator-container">
                             <div className="separator line-separator">
                                 ⌘
                             </div>
                         </div>
-                        <h3>Personally</h3>
+                        <h3 data-aos="fade-up"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic">Personally</h3>
                     </div>
                     <div  data-aos="fade-up"
-                                data-aos-delay="1500"
+                                data-aos-delay="1000"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className="imgCont">
                         <img
@@ -260,7 +264,10 @@ const Body = ()=>{
                             alt=""/>
                     </div>
                     <div className="text-cont">
-                        <p>
+                        <p data-aos="fade-left"
+                        data-aos-delay="500"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-out-cubic">
                             If you don't find me at home, you'll probably find me
                             hiking the volcanoes in Mexico City, bike rides down Newport beach with my brother, backpacking through central america, or watching
                             something Batman related.
