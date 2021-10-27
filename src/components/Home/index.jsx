@@ -25,7 +25,7 @@ const Home = () => {
                         data-aos="fade-up"
                         data-aos-delay="2000"
                         data-aos-duration="2000"
-                        data-aos-easing="ease-out-cubic">A badass growth digital marketer who raises<br/>  converting consumers for B2C companies.</h2>
+                        data-aos-easing="ease-out-cubic">A badass growth digital marketer who raises<br/>  conversion rates for B2C companies.</h2>
 
                 </div>
             </div>
