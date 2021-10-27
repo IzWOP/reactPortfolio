@@ -33,13 +33,13 @@ const Home = () => {
                         data-aos="fade-up"
                         data-aos-duration="2000"
                         data-aos-easing="ease-out-cubic">
-                        The Portfolio<br/>
+                        <br/>
                     </h1>
                     <h2
                         data-aos="fade-up"
                         data-aos-delay="2000"
                         data-aos-duration="2000"
-                        data-aos-easing="ease-out-cubic">Badass web developer and a great digital marketer</h2>
+                        data-aos-easing="ease-out-cubic">Badass growth digital marketer for B2C companies.</h2>
 
                 </div>
             </div>
@@ -212,13 +212,13 @@ const Home = () => {
             <section className="val-props">
                 <div className="container">
                     <div className="text-box">
-                        <h6>My History</h6>
+                        <h6>Special Projects</h6>
                         <div className="separator-container">
                             <div className="separator line-separator">
                                 ⌘
                             </div>
                         </div>
-                        <h3>Collaborating Companies</h3>
+                        <h3>Include Working With</h3>
                     </div>
                     <div className="val-prop-cont">
                         <div data-aos="fade-left"
