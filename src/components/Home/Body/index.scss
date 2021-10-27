@@ -12,6 +12,7 @@
     src: url('../../../fonts/Verlag-Book/Verlag-Book.eot') format('embedded-opentype'), url('../../../fonts/Verlag-Book/Verlag-Book.woff') format('woff'), url('../../../fonts/Verlag-Book/Verlag-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'Verlag-Book';
@@ -20,6 +21,7 @@
     src: url('../../../fonts/Verlag-Book/Verlag-Bold.eot') format('embedded-opentype'), url('../../../fonts/Verlag-Book/Verlag-Bold.woff') format('woff'), url('../../../fonts/Verlag-Book/Verlag-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'Slim-Joe';
@@ -27,6 +29,7 @@
     src: url('../../../fonts/Slim-Joe/Slim-Joe.eot') format('embedded-opentype'), url('../../../fonts/Slim-Joe/Slim-Joe.woff') format('woff'), url('../../../fonts/Slim-Joe/Slim-Joe.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @import url(//fonts.googleapis.com/css?family=Droid+Serif);
 .home{
