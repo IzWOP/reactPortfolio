@@ -70,17 +70,17 @@ const Home = () => {
                                 data-aos-delay="1000"
                                 data-aos-duration="2000"
                                 data-aos-easing="ease-out-cubic">
-                                I'm Isaac, a talented digital marketer and leader based in California and
+                                I'm Isaac, a talented digital growth marketer and leader based in California and
                                 operating for clients throughout USA. I have been building stunningly beautiful
                                 websites and making clients happy for the last year. Before that, I spent two
                                 years in the marketing department at Infinite Peripherals helping build their
                                 website and develop high converting landing pages.
                                 <br/>
                                 <br/>
-                                My services are primarily optimizing websites by making them faster and higher
-                                on Google Search. I also create landing pages to help business land more
-                                customers. I have helped people raise their revenue by 10-15%. Additional
-                                services can include website optimization, I create email campaigns, set up
+                                My services are optimizing websites by making them faster and higher
+                                on Google Search and create landing pages to help business land more
+                                customers. I have helped businesses raise their revenue by 10-15%. Additional
+                                services can include website optimization, email campaigns, set up
                                 google business and customer journeys through their website.
                                 <br/>
                                 <br/>
@@ -287,16 +287,12 @@ const Home = () => {
                     </div>
                     <div className="text-cont">
                         <p>
-                            Things I like to do, if you don't find me at home, you'll probably find me
-                            hiking, bike rides with my brother, backpacking through a country, or watching
+                            If you don't find me at home, you'll probably find me
+                            hiking the volcanoes in Mexico City, bike rides down Newport beach with my brother, backpacking through central america, or watching
                             something Batman related.
                             <br/>
                             <br/>
-                            I was always into computers and fixing my myspace page. That's what started my
-                            path of web development later in life. I started with Python and then moved into
-                            Javascript and React. I still enjoy working on the million side projects I have
-                            that never get done. Currently, my biggest passion is getting businesses to grow
-                            through marketing.
+                            I enjoy traveling and backpacking through different countries months at a time. Doing so gives me inspiration and ideas to be creative in my marketing projects. Traveling helps you gain different perpective into brands messaging and purpose. This helps me be able to connect with my clients a lot more and see their vision to help execute.
                             <br/>
                             <br/>
                             My purpose is to help the people or businesses around me grow not only in
