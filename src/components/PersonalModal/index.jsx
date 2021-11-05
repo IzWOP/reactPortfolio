@@ -235,7 +235,8 @@ const PersonalModal = () => {
                         <div className="text-box">
                             <h5>{selectedProject.project.h5}</h5>
                             <p>{selectedProject.project.paragraph}</p>
-                            <Link to={selectedProject.project.link} className={selectedProject.project.linkClass} target="_blank" rel="noopener noreferrer">Click here </Link>
+                            <Link to={{ pathname: selectedProject.project.link }} className={selectedProject.project.linkClass} rel="noopener noreferrer" target="_blank" >Click here </Link>
+                            {/* <Link to={selectedProject.project.link} className={selectedProject.project.linkClass} target="_blank" rel="noopener noreferrer">Click here </Link> */}
                         </div>
                         <div className="image-box">
                             <div className="image-box_top">
