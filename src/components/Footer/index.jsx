@@ -39,13 +39,13 @@ const Footer = () => {
 
  
                     <div className="socialmedia-links">
-                        <Link2 to={{ pathname: 'https://www.instagram.com/izzyhv_/' }}  className="socialmedia-links_instagram">
+                        <Link2 target="_blank" to={{ pathname: 'https://www.instagram.com/izzyhv_/' }}  className="socialmedia-links_instagram">
                             <FontAwesomeIcon icon={faInstagram}/>
                         </Link2>
-                        <Link2 to={{ pathname: 'https://twitter.com/izzyhv_' }} className="socialmedia-links_twitter">
+                        <Link2  target="_blank" to={{ pathname: 'https://twitter.com/izzyhv_' }} className="socialmedia-links_twitter">
                             <FontAwesomeIcon icon={faTwitter}/>
                         </Link2>
-                        <Link2 to={{ pathname: 'https://www.linkedin.com/in/isaachv/' }} className="socialmedia-links_linkedin">
+                        <Link2 target="_blank" to={{ pathname: 'https://www.linkedin.com/in/isaachv/' }} className="socialmedia-links_linkedin">
                             <FontAwesomeIcon icon={faLinkedinIn}/>
                         </Link2>
                     </div>
