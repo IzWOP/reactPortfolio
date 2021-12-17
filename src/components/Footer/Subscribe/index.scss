@@ -88,7 +88,7 @@
         .separator-container{
             grid-column: 1/-1;
             text-align: center;
-            color: #c5a47e;
+            color: #E3D9C2;
             margin: 0 auto;
             width: 11em;
             .separator.line-separator{
@@ -105,7 +105,7 @@
                     width: 40%;
                     content: " ";
                     margin-top: 7px;
-                    border: 1px solid #c5a47e;
+                    border: 1px solid #E3D9C2;
                 }
                 &::after{
                     float: right;
@@ -113,7 +113,7 @@
                     width: 40%;
                     content: " ";
                     margin-top: 7px;
-                    border: 1px solid #c5a47e;
+                    border: 1px solid #E3D9C2;
                 }
             }
         }

@@ -20,19 +20,19 @@ const Footer = () => {
                         <div onClick={scroll.scrollToTop} className="">
                             <h6>Top</h6>
                         </div>
-                        <Link1 to='intro' spy={true} smooth={true} offset={-70} duration={300}>
+                        <Link1 to='intro' spy={true} smooth={true} offset={-70} duration={250}>
                             <h6>Intro</h6>
                         </Link1>
-                        <Link1 to='values' spy={true} smooth={true} offset={-70} duration={300}>
+                        <Link1 to='values' spy={true} smooth={true} offset={-70} duration={250}>
                             <h6>Services</h6>
                         </Link1>
-                        <Link1 to='testimonial' spy={true} smooth={true} offset={-150} duration={300}>
+                        <Link1 to='testimonial' spy={true} smooth={true} offset={-150} duration={250}>
                             <h6>Testimonial</h6>
                         </Link1>
-                        <Link1 to='projects' spy={true} smooth={true} offset={-20} duration={300}>
+                        <Link1 to='projects' spy={true} smooth={true} offset={-20} duration={250}>
                             <h6>Projects</h6>
                         </Link1>
-                        <Link1 to='contact' spy={true} smooth={true} offset={-70} duration={300}>
+                        <Link1 to='contact' spy={true} smooth={true} offset={-70} duration={250}>
                             <h6>Contact</h6>
                         </Link1>
                     </div>
