@@ -43,27 +43,27 @@ const NavDesk = () => {
         
         <div className='nav-links'>
             <div>
-                <Link to='intro' spy={true} smooth={true} offset={-70} duration={300}>
+                <Link to='intro' spy={true} smooth={true} offset={-70} duration={800}>
                     <button className='products'>Intro</button>
                 </Link>
             </div>
             <div>
-            <Link to='values' spy={true} smooth={true} offset={-70} duration={300}>
+            <Link to='values' spy={true} smooth={true} offset={-70} duration={800}>
                 <button className='products'>Services</button>
                 </Link>
             </div>
             <div>
-            <Link to='testimonial' spy={true} smooth={true} offset={-150}  duration={300}>
+            <Link to='testimonial' spy={true} smooth={true} offset={-150}  duration={800}>
                 <button className='products'>Testimonial</button>
                 </Link>
             </div>
             <div>
-            <Link to='projects' spy={true} smooth={true} offset={-20} duration={300}>
+            <Link to='projects' spy={true} smooth={true} offset={-20} duration={800}>
                 <button className='products'>Projects</button>
                 </Link>
             </div>
             <div>
-                <Link to='contact' spy={true} smooth={true} offset={-70} duration={300}>
+                <Link to='contact' spy={true} smooth={true} offset={-70} duration={800}>
                 <button className='products' >Contact</button>
                 </Link>
             </div>

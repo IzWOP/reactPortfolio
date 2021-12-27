@@ -113,10 +113,10 @@ const PersonalModal = () => {
             case 'project5':
                 setProject({
                     project: {
-                        title: 'Ivanti & Infinite Peripherals Landing Page',
-                        h5:'Perfectly Told Story',
-                        paragraph:'This landing page was created to share Ivantis Wavelink being compatible with Infinite Peripherals devices and software. It was a landing page generated to generate leads and convert them on an external form.To view active landing page:',
-                        linkClass:'',
+                        title: 'Xolo Supply Company Website',
+                        h5:'Perfectly Optimized',
+                        paragraph:'Owner of Xolo Supply Company wanted to grow his online presence and create brand awareness. The client had no marketing other than Instagram marketing directing to their website. We focused on optimizing the website for more sales or higher conversions. We started with adding the basics based on research and competitive market research. That included email capture, a headline to each page and page layout for information consumption. We further added A/B testing to each page to assure webpage was optimized for customer journey and added Google Tag Manager events to paint the customer journey and actions. We lowered bounce rate and drop off rate from the home page to the community or shop page. We also added email capture software and automated email sequences and email campaigns weekly. We raised sales from 2.5k to 10k monthly.',
+                        linkClass:'normal',
                         link:'',
                         image: {
                             src1: 'https://picsum.photos/1600/2000',

@@ -25,7 +25,7 @@ const Body = ()=>{
                         <div className="overtext">
                             <h6
                                 data-aos="fade-up"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">Your Next</h6>
                             <div className="separator-container">
                                 <div className="separator line-separator">⌘</div>
@@ -33,7 +33,7 @@ const Body = ()=>{
                             <h3
                                 data-aos="fade-up"
                                 data-aos-delay="500"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
                                 Marketing Developer
                             </h3>
@@ -42,7 +42,7 @@ const Body = ()=>{
                             <p
                                 data-aos="fade-up"
                                 data-aos-delay="1000"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
                                 I'm Isaac, a talented digital growth marketer and leader based in California and
                                 operating for clients throughout USA. I have been building stunningly beautiful
@@ -68,7 +68,7 @@ const Body = ()=>{
             <section className="latest" id='values'>
                 <div className="container">
                     <h6 data-aos="fade-up"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">Let Me Define</h6>
                     <div className="separator-container">
                         <div className="separator line-separator">
@@ -77,7 +77,7 @@ const Body = ()=>{
                     </div>
                     <h3 data-aos="fade-up"
                                 data-aos-delay="500"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">My Services</h3>
                     <div className="latest-cont">
                         <div data-aos="fade-left"
@@ -86,7 +86,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="latest-item">
                             <h6 data-aos="fade-left"
                                 data-aos-delay="750"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faTachometerAlt}/></h6>
                             <h4>Website Optimization</h4>
                             <p>Web optimization makes your business website load faster and be efficient.
@@ -98,7 +98,7 @@ const Body = ()=>{
                                 data-aos-duration="1500" className="latest-item">
                             <h6 data-aos="fade-left"
                                 data-aos-delay="1250"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faMailBulk}/></h6>
                             <h4>Email Marketing</h4>
                             <p>Email optimization helps you reach customers through emails and get them on
@@ -111,7 +111,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="latest-item">
                             <h6 data-aos="fade-left"
                                 data-aos-delay="1750"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faSearch}/></h6>
                             <h4>Search Engine Optimization</h4>
                             <p>Being on top of the search engine helps generate more organic traffic to your
@@ -125,7 +125,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic"  className="latest-item">
                             <h6 data-aos="fade-left"
                                 data-aos-delay="2250"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faChartLine}/></h6>
                             <h4>Conversion Rate Optimization</h4>
                             <p>Website pages have a purpose, they need to contain the correct information
@@ -139,7 +139,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="latest-item">
                             <h6 data-aos="fade-left"
                                 data-aos-delay="2750"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faCode}/></h6>
                             <h4>Web Development</h4>
                             <p>Websites can make themselves with your help, but sometimes you need a little
@@ -152,7 +152,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="latest-item">
                             <h6 data-aos="fade-left"
                                 data-aos-delay="3000"
-                                data-aos-duration="2000"
+                                data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faPoll}/></h6>
                             <h4>Landing Pages</h4>
                             <p>Those catchy marketing campaigns send a customer to a landing page or your
@@ -174,11 +174,10 @@ const Body = ()=>{
                         <br/>Clutch City Coatings</p>
                     <Link 
                     to='contact'
-                    
                     data-aos="fade-up"
                                 data-aos-delay="3500"
-                                data-aos-duration="2000"
-                                data-aos-easing="ease-out-cubic" >
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" spy={true} smooth={true} offset={-70} duration={800} >
                         <button onClick={handleClick} className='cta'>Contact Isaac</button>
                     </Link>
                 </div>
@@ -201,7 +200,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="val-prop">
                             <img
                                 src="https://res.cloudinary.com/izzyhv/image/upload/q_auto/v1632174385/portfolio/apple-logo_bdlu8x.svg"
-                                alt=" "/>
+                                alt="Apple Partner Logo"/>
                         </div>
                         <div data-aos="fade-left"
                                 data-aos-delay="1000"
@@ -209,15 +208,15 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="val-prop">
                             <img
                                 src="https://res.cloudinary.com/izzyhv/image/upload/q_auto/v1632174384/portfolio/samsung_pnyxql.png"
-                                alt=""/>
+                                alt="Samsung Logo Partner"/>
                         </div>
                         <div data-aos="fade-left"
                                 data-aos-delay="1500"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className="val-prop ivanti">
                             <img
-                                src="https://res.cloudinary.com/izzyhv/image/upload/q_auto/v1634591286/portfolio/ivanti-vector-logo_csltxr.jpg"
-                                alt=""/>
+                                src="https://res.cloudinary.com/izzyhv/image/upload/v1640628207/portfolio/Xolo-Supply-Logo_Black.png"
+                                alt="Xolo Supply Co client logo"/>
                         </div>
                         <div data-aos="fade-left"
                                 data-aos-delay="2000"
@@ -225,7 +224,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="val-prop">
                             <img
                                 src="https://res.cloudinary.com/izzyhv/image/upload/v1632174384/portfolio/infinite-peripherals-logo-stacked_ocesax.svg"
-                                alt=""/>
+                                alt="Infinite Peripherials Logo Partner"/>
                         </div>
                         <div data-aos="fade-left"
                                 data-aos-delay="2500"
@@ -234,7 +233,7 @@ const Body = ()=>{
 
                             <img
                                 src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1634620915/portfolio/clutch_city_coatings_logo.jpg"
-                                alt=""/>
+                                alt="Clutch City Coatings Client Logo"/>
 
                         </div>
                     </div>
@@ -244,7 +243,7 @@ const Body = ()=>{
                 <div className="container">
                     <div className="section-header">
                         <h6 data-aos="fade-up"
-                        data-aos-duration="1000"
+                        data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">Get to Know Me</h6>
                         <div className="separator-container">
                             <div className="separator line-separator">
@@ -256,16 +255,15 @@ const Body = ()=>{
                         data-aos-easing="ease-out-cubic">Personally</h3>
                     </div>
                     <div  data-aos="fade-up"
-                                data-aos-delay="1000"
+                                data-aos-delay="500"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className="imgCont">
                         <img
                             src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,w_200,h_200,q_auto,c_thumb,r_max/v1/portfolio/Isaac_Vazquez_web_developer.jpg"
-                            alt=""/>
+                            alt="Isaac Vazquez Profile Picture"/>
                     </div>
                     <div className="text-cont">
                         <p data-aos="fade-left"
-                        data-aos-delay="500"
                         data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                             If you don't find me at home, you'll probably find me
