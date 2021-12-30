@@ -260,7 +260,7 @@ const Body = ()=>{
                                 data-aos-easing="ease-out-cubic" className="imgCont">
                         <img
                             src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,w_200,h_200,q_auto,c_thumb,r_max/v1/portfolio/Isaac_Vazquez_web_developer.jpg"
-                            alt="Isaac Vazquez Profile Picture"/>
+                            alt="Isaac Vazquez Profile"/>
                     </div>
                     <div className="text-cont">
                         <p data-aos="fade-left"

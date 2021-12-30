@@ -17,10 +17,15 @@ const PersonalModal = () => {
         setSelected] = useState({selected: null});
     const [show,
         setShow] = useState(false);
-    function handleShow(clickedProject) {
+    function handleShow(clickedProject, gAnalyticsVariable) {
         setFullscreen(true);
         setShow(true);
         setSelected(clickedProject);
+        window.dataLayer.push({
+            event: gAnalyticsVariable
+            });
+            
+          
     }
     useEffect(() => {
         switch (userSelected.selected) {
@@ -175,7 +180,7 @@ const PersonalModal = () => {
                 <div data-aos="fade-left"
                                 data-aos-delay="500"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project1'})}>
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project1'}, 'ivantiLook')}>
                 <h3>Ivanti & <br/> 
                     Infinite Peripherals Landing Page
                 </h3>
@@ -185,7 +190,7 @@ const PersonalModal = () => {
                 <div data-aos="fade-left"
                                 data-aos-delay="1000"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project2'})}>
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project2'}, 'travelLook')}>
                     <h3>Travel Industry Landing Page</h3>
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/flight-hero_vmwl0o.jpg" alt="" loading="lazy"/>
@@ -193,7 +198,7 @@ const PersonalModal = () => {
                 <div data-aos="fade-left"
                                 data-aos-delay="1500"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project3'})}>
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project3'}, 'nrfLook')}>
                     <h3>Post NRF 2020 Landing Page</h3>
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/post-nrf-infinite-peripherals-hero_xolrow.jpg" alt="" loading="lazy"/>
@@ -203,7 +208,7 @@ const PersonalModal = () => {
                 <div data-aos="fade-left"
                                 data-aos-delay="750"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project4'})}>
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project4'}, 'herosLook')}>
                     <h3>Essential Heros Landing Page</h3>
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/protect_your_heros.jpg" alt="" loading="lazy"/>
