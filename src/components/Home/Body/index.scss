@@ -139,6 +139,12 @@
                 // grid-column: 3/8;
                 @include breakpoint(md) {
                     padding: 0;
+                    font-size: 1rem;
+                    padding-left: 1rem;
+                }
+                @include breakpoint(lg){
+                    font-size: 1.25rem;
+                    padding: 0;
                 }
                 span {
                     font-weight: 400;
@@ -500,7 +506,12 @@
                     font-size: 1rem;
                     color: #333;
                     @include breakpoint(md){
+                        font-size: 1rem;
+                        padding-left: 1rem;
+                    }
+                    @include breakpoint(lg){
                         font-size: 1.25rem;
+                        padding-left: 0;
                     }
                 }
             }

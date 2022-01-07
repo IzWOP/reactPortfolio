@@ -149,8 +149,22 @@
                     transition: all .3s;
                     transform: translate(0%,0%);
                     text-align: center;
-                    padding: 5rem;
+                    padding-top: 1rem;
+                    padding-left: 1rem;
+                    font-size: 2.5rem;
+                }
+                @include breakpoint(lg){
+                    width: auto;
+                    z-index: -1;
+                    opacity: 0;
+                    transition: all .3s;
+                    transform: translate(0%,0%);
+                    text-align: center;
+                    padding: 2.5rem;
                     font-size: 3.7rem;
+                }
+                @include breakpoint(xl){
+                    padding: 3rem;
                 }
          
             }
