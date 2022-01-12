@@ -33,7 +33,7 @@ const Home = () => {
                         data-aos-delay="1000"
                         data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">A badass growth digital marketer who raises<br/>
-                        conversion rates for B2C companies.</h2>
+                        profits for B2C companies through higher conversion rates.</h2>
                     <Link
                         to='contact'
                         data-aos="fade-up"
