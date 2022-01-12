@@ -35,7 +35,7 @@ const Body = ()=>{
                                 data-aos-delay="500"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
-                                Marketing Developer
+                                Digital Marketer
                             </h3>
                         </div>
                         <div>
@@ -44,7 +44,7 @@ const Body = ()=>{
                                 data-aos-delay="1000"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
-                                I'm Isaac, a talented digital growth marketer and leader based in California and
+                                I'm Isaac, a talented digital marketer/ growth hacker and leader based in California and
                                 operating for clients throughout USA. I have been building stunningly beautiful
                                 websites and making clients happy for the last year. Before that, I spent two
                                 years in the marketing department at Infinite Peripherals helping build their
