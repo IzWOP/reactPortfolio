@@ -102,6 +102,10 @@
                 padding-left: 0;
                 padding-right: 0;
             }
+            @include breakpoint(lg) {
+                margin: auto;
+                width: 800px;
+            }
         }
         &_textbox {
             padding-left: auto;

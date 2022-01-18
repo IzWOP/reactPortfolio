@@ -40,7 +40,7 @@ const Home = () => {
                         data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic"
                         spy={true} smooth={true} offset={-70} duration={800}>
-                        <button onClick={handleClick} className='cta'>Contact Isaac</button>
+                        <button onClick={handleClick} className='cta'>Let's Do It</button>
                     </Link>
                 </div>
             </div>
