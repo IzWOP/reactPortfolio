@@ -35,7 +35,7 @@ const Body = ()=>{
                                 data-aos-delay="500"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
-                                Digital Marketer
+                                Digital <br/> Marketer
                             </h3>
                         </div>
                         <div>
@@ -44,22 +44,9 @@ const Body = ()=>{
                                 data-aos-delay="1000"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
-                                I'm Isaac, a talented digital marketer/ growth hacker and leader based in California and
-                                operating for clients throughout USA. I have been building stunningly beautiful
-                                websites and making clients happy for the last year. Before that, I spent two
-                                years in the marketing department at Infinite Peripherals helping build their
-                                website and develop high converting landing pages.
+                                Hey! I'm Isaac, a digital marketer based in California operating for clients throughout the U.S. 
                                 <br/>
-                                <br/>
-                                My services are optimizing websites by making them faster and higher
-                                on Google Search and create landing pages to help business land more
-                                customers. I have helped businesses raise their revenue by 10-15%. Additional
-                                services can include website optimization, email campaigns, set up
-                                google business and customer journeys through their website.
-                                <br/>
-                                <br/>
-                                Feel free to get in touch with me to talk about your plans, wants, and needs. I
-                                think you’ll enjoy working with me and the benefits received.
+                                My specialty is assuring a smooth customer journey through e-com and service based websites to help raise sales and leads. I raise sales and leads by focusing on raising conversion rates. I have raised conversion rates from &lt;3% to anywhere from 6 to 10% by A/B testing design layouts, updating copy, and editing offers.
                             </p>
                         </div>
                     </div>
@@ -69,7 +56,7 @@ const Body = ()=>{
                 <div className="container">
                     <h6 data-aos="fade-up"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic">Let Me Define</h6>
+                                data-aos-easing="ease-out-cubic">Let Me Relay</h6>
                     <div className="separator-container">
                         <div className="separator line-separator">
                             ⌘
@@ -87,11 +74,13 @@ const Body = ()=>{
                             <h6 data-aos="fade-left"
                                 data-aos-delay="750"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faTachometerAlt}/></h6>
-                            <h4>Website Optimization</h4>
-                            <p>Web optimization makes your business website load faster and be efficient.
-                                Web optimization can get the resources your customers want and need quickly.
-                                Helping them make decisions about your services/products faster.</p>
+                                data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faChartLine} /></h6>
+                                  <h4>Conversion Rate Optimization</h4>
+                            <p>Website pages have a purpose, they need to contain the correct information
+                                and lead them to make the actions that we want. Make sure that your marketing
+                                spend isn't going to waste.
+                            </p>
+                            
                         </div>
                         <div data-aos="fade-left"
                                 data-aos-delay="1250"
@@ -99,11 +88,12 @@ const Body = ()=>{
                             <h6 data-aos="fade-left"
                                 data-aos-delay="1250"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faMailBulk}/></h6>
-                            <h4>Email Marketing</h4>
-                            <p>Email optimization helps you reach customers through emails and get them on
-                                your page for more information. The more customers on your business website, the
-                                more you can convert potential customers to paying customers.</p>
+                                data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faPoll} /></h6>
+                                <h4>Landing Pages</h4>
+                            <p>Those catchy marketing campaigns send a customer to a landing page or your
+                                business website. Creating high converting pages is essential to help lower ad spend and raise profits..
+                            </p>
+                        
                         </div>
                         <div data-aos="fade-left"
                                 data-aos-delay="1750"
@@ -126,12 +116,12 @@ const Body = ()=>{
                             <h6 data-aos="fade-left"
                                 data-aos-delay="2250"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faChartLine}/></h6>
-                            <h4>Conversion Rate Optimization</h4>
-                            <p>Website pages have a purpose, they need to contain the correct information
-                                and lead them to make the actions that we want. Make sure that your marketing
-                                spend isn't going to waste.
-                            </p>
+                                data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faTachometerAlt} /></h6>
+                                <h4>Website Optimization</h4>
+                            <p>Web optimization makes your business website load faster and be efficient.
+                                Web optimization can get the resources your customers want and need quickly.
+                                Helping them make decisions about your services/products faster.</p>
+                          
                         </div>
                         <div data-aos="fade-left"
                                 data-aos-delay="1250"
@@ -153,12 +143,9 @@ const Body = ()=>{
                             <h6 data-aos="fade-left"
                                 data-aos-delay="3000"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faPoll}/></h6>
-                            <h4>Landing Pages</h4>
-                            <p>Those catchy marketing campaigns send a customer to a landing page or your
-                                business website. Creating those pages in efficient formats can be optimized to
-                                be fast is essential to capture those leads.
-                            </p>
+                                data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faMailBulk} /></h6>
+                                <h4>Email Marketing</h4>
+                            <p>Email marketing helps you reach customers through emails and get returning users onto your website. Personlization with emails raises conversion rates.</p>
                         </div>
                     </div>
                 </div>
@@ -234,6 +221,16 @@ const Body = ()=>{
                             <img
                                 src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1634620915/portfolio/clutch_city_coatings_logo.jpg"
                                 alt="Clutch City Coatings Client Logo"/>
+
+                        </div>
+                        <div data-aos="fade-left"
+                                data-aos-delay="3000"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" className="val-prop">
+
+                            <img
+                                src="https://res.cloudinary.com/izzyhv/image/upload/v1648257126/portfolio/elite_sports_confidence_logo_black.png"
+                                alt="Elite Sports Confidence Client Logo"/>
 
                         </div>
                     </div>
