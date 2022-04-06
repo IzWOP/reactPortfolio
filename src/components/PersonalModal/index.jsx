@@ -118,20 +118,20 @@ const PersonalModal = () => {
             case 'project5':
                 setProject({
                     project: {
-                        title: 'Xolo Supply Company Website',
-                        h5:'Perfectly Optimized',
-                        paragraph:'Owner of Xolo Supply Company wanted to grow his online presence and create brand awareness. The client had no marketing other than Instagram marketing directing to their website. We focused on optimizing the website for more sales or higher conversions. We started with adding the basics based on research and competitive market research. That included email capture, a headline to each page and page layout for information consumption. We further added A/B testing to each page to assure webpage was optimized for customer journey and added Google Tag Manager events to paint the customer journey and actions. We lowered bounce rate and drop off rate from the home page to the community or shop page. We also added email capture software and automated email sequences and email campaigns weekly. We raised sales from 2.5k to 10k monthly.',
+                        title: 'Elite Sports Confidence Website',
+                        h5:'From Nothing to Everything',
+                        paragraph:'Jonathan Barber came to me and asked me to update his Wix based website to be higher converting with a smoother customer journey. He had no idea where to start or what a website should look like. I was able to execute his vision by creating the branding, the message, the mission and the products to sell. Before he had a standard template on the site with no purpose on the website. To the right we see the previous page to the updated three pages in white. We also set up his email capture to help his email marketing and selling his courses.',
                         linkClass:'normal',
-                        link:'',
+                        link:'https://www.elitesportsconfidence.com/',
                         image: {
-                            src1: 'https://picsum.photos/1600/2000',
-                            alt1: 'Ivanti Webpage',
-                            src2: 'https://picsum.photos/1600/2000',
-                            alt2: 'Ivanti Webpage',
-                            src3: 'https://picsum.photos/1600/2000',
-                            alt3: 'Ivanti Webpage',
-                            src4: 'https://picsum.photos/1600/2000',
-                            alt4: 'Ivanti Webpage'
+                            src1: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/previous-elitesportsconfidence-min_yhbccj.jpg',
+                            alt1: 'Previous Elite Sports Confidence Webpage',
+                            src2: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/elitesportsconfidence-new_d6sjos.png',
+                            alt2: 'Updated ESC Webpage',
+                            src3: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/esc-course_u7x5eh.jpg',
+                            alt3: 'Elite Sports Confidence Course Webpage',
+                            src4: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/syndicate-page_pdhv7k.jpg',
+                            alt4: 'Elite Sports Confidence community Webpage'
                         }
                     }
                 });
@@ -139,20 +139,19 @@ const PersonalModal = () => {
             case 'project6':
                 setProject({
                     project: {
-                        title: 'Ivanti & Infinite Peripherals Landing Page',
-                        h5:'Perfectly Told Story',
-                        paragraph:'This landing page was created to share Ivantis Wavelink being compatible with Infinite Peripherals devices and software. It was a landing page generated to generate leads and convert them on an external form.',
-                        linkClass:'',
-                        link:'',
+                        title: 'Xolo Supply Company Website',
+                        h5:'Perfectly Optimized',
+                        paragraph:'Owner of Xolo Supply Company wanted to grow his online presence and create brand awareness. The client had only Instagram marketing directing to their website. We focused on optimizing the website for more sales or higher conversions. We started with adding the basics based on research and competitive market research. That included email capture, a headline to each page and page layout for information consumption. We further added A/B testing to each page to assure webpage was optimized for customer journey and added Google Tag Manager events to paint the customer journey and actions. We lowered bounce rate by 23% and drop off rate by 20% going from the home page to the community or shop page. We also added email capture software and automated email sequences and email campaigns weekly. We raised conversions from 1.8% to over 3.75% implementing these changes.',
+                        link:'https://www.xolosupply.com/',
                         image: {
-                            src1: 'https://picsum.photos/1600/2000',
-                            alt1: 'Ivanti Webpage',
-                            src2: 'https://picsum.photos/1600/2000',
-                            alt2: 'Ivanti Webpage',
-                            src3: 'https://picsum.photos/1600/2000',
-                            alt3: 'Ivanti Webpage',
-                            src4: 'https://picsum.photos/1600/2000',
-                            alt4: 'Ivanti Webpage'
+                            src1: 'https://res.cloudinary.com/izzyhv/image/upload/v1649205882/portfolio/xolo-home-1_vc0scq.png',
+                            alt1: 'Xolo supply home page Webpage',
+                            src2: 'https://res.cloudinary.com/izzyhv/image/upload/v1649205881/portfolio/xolo-home-2_qpdo6a.png',
+                            alt2: 'Xolo supply home page bottom Webpage',
+                            src3: 'https://res.cloudinary.com/izzyhv/image/upload/v1649205599/portfolio/xolo-supply-shop-min_mvzhvn.png',
+                            alt3: 'Xolo supply shop page Webpage',
+                            src4: 'https://res.cloudinary.com/izzyhv/image/upload/v1649206013/portfolio/xolo-product_mjiouk.png',
+                            alt4: 'xolo supply product Webpage'
                         }
                     }
                 });
@@ -213,17 +212,21 @@ const PersonalModal = () => {
                     <div className="background"></div>
                     <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/protect_your_heros.jpg" alt="" loading="lazy"/>
                 </div>
-                <div className="project" >
-                {/* onClick={() => handleShow({selected: 'project5'})} */}
-                    {/* <h3>title</h3> */}
+                <div data-aos="fade-left"
+                                data-aos-delay="800"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project5'}, 'coachLook')}>
+                    <h3>Elite Sports Confidence Website</h3>
                     <div className="background"></div>
-                    {/* <img src="https://picsum.photos/1600/2000" alt=""/> */}
+                    <img src="https://res.cloudinary.com/izzyhv/image/upload/g_auto,c_fill,f_auto,q_auto/v1/portfolio/esc-home_nywtwl.jpg" alt="" loading="lazy"/>
                 </div>
-                <div className="project" >
-                {/* onClick={() => handleShow({selected: 'project6'})} */}
-                {/* <h3>title</h3> */}
+                <div data-aos="fade-left"
+                                data-aos-delay="850"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project6'},'xoloLook')}>
+                <h3>Xolo Supply Co CRO</h3>
                     <div className="background"></div>
-                    {/* <img src="https://picsum.photos/1600/2000" alt=""/> */}
+                    <img src="https://res.cloudinary.com/izzyhv/image/upload/g_auto,c_fill,f_auto,q_auto/v1/portfolio/xolosupply-hero_r65hzg.jpg" alt="Xolo Supply Hero" loading="lazy"/>
                 </div>
             </div>
         </div>
