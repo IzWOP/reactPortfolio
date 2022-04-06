@@ -17,6 +17,7 @@ const PersonalModal = () => {
         setSelected] = useState({selected: null});
     const [show,
         setShow] = useState(false);
+    const handleClose = () => setShow(false);
     function handleShow(clickedProject, gAnalyticsVariable) {
         setFullscreen(true);
         setShow(true);
@@ -53,22 +54,18 @@ const PersonalModal = () => {
             case 'project2':
                 setProject({
                     project: {
-                        title: 'Travel Industry Landing Page',
-                        h5:'Target: Airlines',
-                        paragraph:' This page was used to get the attention of the top airlines. The goal was to capture more leads and educate them with a ebook download. Major key points were not needing wifi to capture credit card information to process transactions later. Another key point was to educate them on the faster workflow both in the airplane and on the ground when the plan landed. Assuring that each process ran smoothly with Infinite Peripheral devices. Other key points include, easy to create workflow software, iPhone/iPod device usage and quick data capturing. To view active landing page:',
+                        title: 'Alejandra Leal Mental Heath Services Website',
+                        h5:'Mental Health is Weath',
+                        paragraph:'Alejandra came to me asking for a simple website where she could provide information on experience, services and resources. The goal she wanted for her website was not to sell any services or highlight benefits. She wanted a place to show her credibility on her experience and knowledge. We kept the site as a great simple design that can easily be updated to be a lead generating source. ',
                         linkClass:'normal',
-                        link:'https://go.ipcmobile.com/travel-q4-2019',
+                        link:'https://www.alejandraleallcsw.com/',
                         image: {
-                            src1: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/New-In-Flight-Revenues-top_kfeahc.jpg',
-                            alt1: 'Hero image and ebook download for airline leads on development page',
-                            src2: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/New-In-Flight-Revenues-Right-middle-2_cxlxib.jpg',
-                            alt2: 'Airline above the wing website development',
-                            src3: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/New-In-Flight-Revenues-middle_gr3yrm.jpg',
-                            alt3: 'rfid, nfc on airline development page',
-                            src4: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/5-Strategies-You-Can-Implement-to-Unlock-New-In-Flight-Revenues-bottom_x8lhr9.jpg',
-                            alt4: 'Call to action on airline development page',
-                            src5: 'https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/New-In-Flight-Revenues-full.jpg',
-                            alt5: 'Full developed page for airline leads'
+                            src1: 'https://res.cloudinary.com/izzyhv/image/upload/v1649211410/portfolio/alejandraLeal-home_maa0zd.jpg',
+                            alt1: 'Home page for Alejandra Leal Theraputic sessions',
+                            src2: 'https://res.cloudinary.com/izzyhv/image/upload/v1649211410/portfolio/AlejandraLeal-services_x4xyps.jpg',
+                            alt2: 'Alejandra Leal Services Page',
+                            src3: 'https://res.cloudinary.com/izzyhv/image/upload/v1649211415/portfolio/AlejandraLeal-experience_uwy5fg.jpg',
+                            alt3: 'Alejandra Leal Experience Page'
                         }
                     }
                 });
@@ -189,10 +186,10 @@ const PersonalModal = () => {
                 <div data-aos="fade-left"
                                 data-aos-delay="1000"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project2'}, 'travelLook')}>
-                    <h3>Travel Industry Landing Page</h3>
+                                data-aos-easing="ease-out-cubic" className="project" onClick={() => handleShow({selected: 'project2'}, 'alexLook')}>
+                    <h3>Alejandra Leal Mental Health Website</h3>
                     <div className="background"></div>
-                    <img src="https://res.cloudinary.com/izzyhv/image/upload/f_auto,q_auto/v1/portfolio/flight-hero_vmwl0o.jpg" alt="" loading="lazy"/>
+                    <img src="https://res.cloudinary.com/izzyhv/image/upload/v1649212324/portfolio/alealhome.png" alt="" loading="lazy"/>
                 </div>
                 <div data-aos="fade-left"
                                 data-aos-delay="1500"
@@ -230,7 +227,7 @@ const PersonalModal = () => {
                 </div>
             </div>
         </div>
-        <Modal show={show} fullscreen={fullscreen} onHide= {() => {setShow(false); setProject({project:null});setSelected({selected:null}); }}>
+        <Modal show={show} fullscreen={fullscreen} onHide= {() => {handleClose(); setProject({project:null});setSelected({selected:null}); }}>
             {selectedProject.project !== null && <div className='project-details'>
                 <Modal.Header closeButton> <FontAwesomeIcon  icon={faTimes}/></Modal.Header>
                 <Modal.Body>

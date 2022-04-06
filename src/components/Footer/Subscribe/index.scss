@@ -117,6 +117,12 @@
                 }
             }
         }
+        .calendly-inline-widget{
+            min-height:1000px;
+            @include breakpoint(md) {
+                min-height:650px;
+            }
+        }
     }
     form {
         grid-column: 1/-1;
