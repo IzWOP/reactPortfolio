@@ -91,7 +91,7 @@ const Subscribe = () => {
 //   }, [emailStatus, reset]);
 
   return (
-    <section className="send_email">
+    <section className="send_email"  id="contact">
       <div className="background"></div>
       <div className="container">
         <h3
