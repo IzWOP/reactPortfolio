@@ -104,9 +104,8 @@ const Subscribe = () => {
         <div className="separator-container">
           <div className="separator line-separator">⌘</div>
         </div>
-        <InlineWidget url="https://calendly.com/isaachv/30min" />
+        <InlineWidget url="https://calendly.com/isaachv/1on1" />
         
-
         {/* <h6  data-aos="fade-up"
                 data-aos-delay="500"
                     data-aos-duration="1500"

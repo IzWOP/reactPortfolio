@@ -16,7 +16,6 @@
     "bootstrap": "5.1.0",
     "cra-template": "1.1.2",
     "jquery": "^3.6.0",
-    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-calendly": "^3.0.2",
@@ -29,6 +28,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-yup": "^1.23.0",
+    "sass": "^1.52.3",
     "yup": "^0.29.0"
   },
   "scripts": {
