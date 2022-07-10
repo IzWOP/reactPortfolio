@@ -58,7 +58,7 @@ const Body = ()=>{
                 <div className="container">
                     <h6 data-aos="fade-up"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic">Let Me Relay</h6>
+                                data-aos-easing="ease-out-cubic">The</h6>
                     <div className="separator-container">
                         <div className="separator line-separator">
                             ⌘
@@ -67,7 +67,7 @@ const Body = ()=>{
                     <h3 data-aos="fade-up"
                                 data-aos-delay="500"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic">My Services</h3>
+                                data-aos-easing="ease-out-cubic">Services</h3>
                     <div className="latest-cont">
                         <div data-aos="fade-left"
                                 data-aos-delay="750"
@@ -164,13 +164,13 @@ const Body = ()=>{
             <section className="val-props">
                 <div className="container">
                     <div className="text-box">
-                        <h6>Special Projects</h6>
+                        <h6>Projects Collaborated</h6>
                         <div className="separator-container">
                             <div className="separator line-separator">
                                 ⌘
                             </div>
                         </div>
-                        <h3>Include Working With</h3>
+                        <h3>With</h3>
                     </div>
                     <div className="val-prop-cont">
                         <div data-aos="fade-left"
@@ -233,7 +233,7 @@ const Body = ()=>{
                     <div className="section-header">
                         <h6 data-aos="fade-up"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic">Get to Know Me</h6>
+                        data-aos-easing="ease-out-cubic">Meet Ya Boy</h6>
                         <div className="separator-container">
                             <div className="separator line-separator">
                                 ⌘
@@ -241,7 +241,7 @@ const Body = ()=>{
                         </div>
                         <h3 data-aos="fade-up"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic">Personally</h3>
+                        data-aos-easing="ease-out-cubic">Isaac</h3>
                     </div>
                     <div  data-aos="fade-up"
                                 data-aos-delay="500"
@@ -256,15 +256,15 @@ const Body = ()=>{
                         data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                             If you don't find me at home, you'll probably find me
-                            hiking the volcanoes in Mexico City, bike rides down Newport Beach with my brother, backpacking through Latin America, or watching
+                            hiking the volcanoes in Mexico City, bike ridin with my brother down Newport Beach, backpackin through Latin America, or watching
                             something Batman related.
                             <br/>
                             <br/>
-                           Being active and traveling has creates the inspiration and ideas to apply towards solutions within my clients website projects.
+                           Being active and traveling creates the inspiration and ideas to apply towards solutions within my clients website projects.
                             <br/>
                             <br/>
-                            My purpose is to help the people or businesses around me grow not only in
-                            business, but in life as well.<br/>
+                            <h5>My purpose is to help the people or businesses around me grow not only in
+                            business, but in life as well.</h5>
                         </p>
                     </div>
                 </div>

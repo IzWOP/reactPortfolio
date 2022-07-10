@@ -99,7 +99,7 @@ const Subscribe = () => {
           data-aos-duration="1500"
           data-aos-easing="ease-out-cubic"
         >
-          Get in Touch
+          Set A Meeting
         </h3>
         <div className="separator-container">
           <div className="separator line-separator">⌘</div>
