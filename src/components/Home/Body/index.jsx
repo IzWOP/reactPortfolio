@@ -26,7 +26,7 @@ const Body = ()=>{
                             <h6
                                 data-aos="fade-up"
                                 data-aos-duration="1500"
-                                data-aos-easing="ease-out-cubic">Your Next</h6>
+                                data-aos-easing="ease-out-cubic">The</h6>
                             <div className="separator-container">
                                 <div className="separator line-separator">⌘</div>
                             </div>
@@ -35,7 +35,7 @@ const Body = ()=>{
                                 data-aos-delay="500"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
-                                Digital <br/> Marketer
+                                Digital <br/> Domain
                             </h3>
                         </div>
                         <div>
@@ -44,9 +44,11 @@ const Body = ()=>{
                                 data-aos-delay="1000"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic">
-                                Hey! I'm Isaac, a digital marketer based in California operating for clients throughout the U.S. 
+                                <b>Pretty website designs are dead.</b><br/>Websites are the online storefront of many businesses today where they generate revenue.
+                                <br/>The goal is to create a coherent and cohesive  website experience reflecting brand values and mission while being a seamless user experience to raise conversion rates and website engagement.
+                                <br/>Pretty websites are nice, <b><i>efficient</i> pretty websites are better</b>. 
                                 <br/>
-                                My specialty is assuring a smooth customer journey through e-com and service based websites to help raise sales and leads. I raise sales and leads by focusing on raising conversion rates. I have raised conversion rates from &lt;3% to anywhere from 6 to 10% by A/B testing design layouts, updating copy, and editing offers.
+                               
                             </p>
                         </div>
                     </div>
@@ -75,11 +77,10 @@ const Body = ()=>{
                                 data-aos-delay="750"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faChartLine} /></h6>
-                                  <h4>Conversion Rate Optimization</h4>
-                            <p>Website pages have a purpose, they need to contain the correct information
-                                and lead them to make the actions that we want. Make sure that your marketing
-                                spend isn't going to waste.
-                            </p>
+                                <h4>Conversion Rate Optimization</h4>
+                                <p>
+                                There are no perfect websites, but using split (A/B) testing can get it close. Lower ad spend, raise page speed, survey customer pain points and watch profits rise. 
+                                </p>
                             
                         </div>
                         <div data-aos="fade-left"
@@ -89,9 +90,8 @@ const Body = ()=>{
                                 data-aos-delay="1250"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faPoll} /></h6>
-                                <h4>Landing Pages</h4>
-                            <p>Those catchy marketing campaigns send a customer to a landing page or your
-                                business website. Creating high converting pages is essential to help lower ad spend and raise profits..
+                                <h4>Landing Pages/Funnels</h4>
+                            <p>Using efficient landing pages to move users from top of funnel to the bottom/sale as quickly as possible. Websites sometimes are nice, small quick landing pages to move users is even better.
                             </p>
                         
                         </div>
@@ -104,9 +104,7 @@ const Body = ()=>{
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic" className='numbers'><FontAwesomeIcon icon={faSearch}/></h6>
                             <h4>Search Engine Optimization</h4>
-                            <p>Being on top of the search engine helps generate more organic traffic to your
-                                business website and generate more returning customers. Assure that your on page
-                                and technical SEO is working for you.
+                            <p>Generating traffic without spending on ads or social media. Organic traffic is free, organic traffic is forever.
                             </p>
                         </div>
                         <div data-aos="fade-left"
@@ -118,9 +116,7 @@ const Body = ()=>{
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faTachometerAlt} /></h6>
                                 <h4>Website Optimization</h4>
-                            <p>Web optimization makes your business website load faster and be efficient.
-                                Web optimization can get the resources your customers want and need quickly.
-                                Helping them make decisions about your services/products faster.</p>
+                            <p>Lower the amount of people leaving, speed up webpages, remove unused scipts, reduce image sizes.</p>
                           
                         </div>
                         <div data-aos="fade-left"
@@ -132,9 +128,7 @@ const Body = ()=>{
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faCode}/></h6>
                             <h4>Web Development</h4>
-                            <p>Websites can make themselves with your help, but sometimes you need a little
-                                bit of extra help making, adding or fixing a feature. You may also need a whole
-                                website or add a new website page. Help is available.</p>
+                            <p>Custom solutions for themes on any platform. Shopify, Wix,WordPress, JavaScript Technologies.</p>
                         </div>
                         <div  data-aos="fade-left"
                                 data-aos-delay="1750"
@@ -145,16 +139,14 @@ const Body = ()=>{
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-out-cubic"  className='numbers'><FontAwesomeIcon icon={faMailBulk} /></h6>
                                 <h4>Email Marketing</h4>
-                            <p>Email marketing helps you reach customers through emails and get returning users onto your website. Personlization with emails raises conversion rates.</p>
+                            <p>Setting up flows for the abandoned carts, segmentations of users, newsletters, campaigns all to get your users to convert.</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section className="cta-products" id='testimonial'>
                 <div className="container">
-                    <h3>"Isaac is very educated in what is necessary to have a sucessful website. He
-                        communicated clearly and set expectations from the beginning and made the whole
-                        process simple."
+                    <h3>"Isaac is a master of websites. We broke down our wants and needs and he helped us get there. It was super easy to let him come in and get to work while becoming part of the team."
                         <br/>- Zane Mussulman.
                     </h3>
                     <p>Owner/CEO of
@@ -264,16 +256,15 @@ const Body = ()=>{
                         data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                             If you don't find me at home, you'll probably find me
-                            hiking the volcanoes in Mexico City, bike rides down Newport beach with my brother, backpacking through central america, or watching
+                            hiking the volcanoes in Mexico City, bike rides down Newport Beach with my brother, backpacking through Latin America, or watching
                             something Batman related.
                             <br/>
                             <br/>
-                            I enjoy traveling and backpacking through different countries months at a time. Doing so gives me inspiration and ideas to be creative in my marketing projects. Traveling helps you gain different perpective into brands messaging and purpose. This helps me be able to connect with my clients a lot more and see their vision to help execute.
+                           Being active and traveling has creates the inspiration and ideas to apply towards solutions within my clients website projects.
                             <br/>
                             <br/>
                             My purpose is to help the people or businesses around me grow not only in
                             business, but in life as well.<br/>
-                            Let's talk soon friend.
                         </p>
                     </div>
                 </div>
