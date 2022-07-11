@@ -32,7 +32,7 @@ const Home = () => {
                         data-aos="fade-up"
                         data-aos-delay="1000"
                         data-aos-duration="1500"
-                        data-aos-easing="ease-out-cubic">A badass developer who specializes in raising profits of websites through marketing and data.</h2>
+                        data-aos-easing="ease-out-cubic">A badass developer who specializes in raising profits of B2C websites through marketing and data.</h2>
                     <Link
                         to='contact'
                         data-aos="fade-up"
